@@ -9,11 +9,12 @@ from torchvision.models import resnet50, ResNet50_Weights
 import wandb
 import os
 
-
 # Get the W&B API key from the environment variable
-wandb_api_key = os.getenv('wan_db')
+wandb_api_key = os.getenv('WANDB_API_KEY')
+print(f"WANDB_API_KEY: {wandb_api_key}")  # Debug print to check the API key
+
 if wandb_api_key:
-    wandb.login(key=wandb_api_key, relogin=True)  
+    wandb.login(key=wandb_api_key, relogin=True)  # Ensure relogin is set to True for non-interactive environments
 else:
     raise ValueError("W&B API key not found in environment variables")
 
