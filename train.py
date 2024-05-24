@@ -2,14 +2,9 @@ from datasets import load_dataset
 from torch.utils.data import DataLoader, random_split, Dataset
 from torchvision import transforms
 from PIL import Image
-from torchvision.datasets import ImageFolder
-from torchvision.transforms import ToTensor
-import requests
-import io
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
 from torchvision.models import resnet50, ResNet50_Weights
 import wandb
 
@@ -27,17 +22,13 @@ class TransformDataset(Dataset):
     
     def __getitem__(self, idx):
         # Assuming the dataset returns a dictionary with 'image' and 'label' keys
-        image_url = self.dataset[idx]['image']
+        image = self.dataset[idx]['image']
         label = self.dataset[idx]['label']
         
-        # Load the image from URL
-        response = requests.get(image_url)
-        image = Image.open(io.BytesIO(response.content)).convert("RGB")
-        
+        # The image is already a PIL Image object, so no need to convert it
         if self.transform:
             image = self.transform(image)
         return image, label
-
 
 # Load dataset
 dataset = load_dataset("garythung/trashnet")
@@ -70,13 +61,6 @@ val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
 
 wandb.login()
-
-run = wandb.init(
-    project="trashnet-classification",
-    notes="My first experiment",
-    tags=["baseline", "resnet50"],
-    entity="hasnanmr"
-)
 
 def get_model():
     "A simple model"
