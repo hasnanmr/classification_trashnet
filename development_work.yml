@@ -24,12 +24,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Verify Environment Variable
-      run: echo "WANDB_API_KEY=$WANDB_API_KEY"
+    - name: Loging W&B
+      shell: bash
       env:
-        wan_db: ${{ secrets.WANDB_API_KEY }}
+          WANDB_API: ${{ secrets.WANDB_API_KEY }}
+      run: wandb login "$WANDB_API"
 
     - name: Run training script
-      env:
-        wan_db: ${{ secrets.WANDB_API_KEY }}
       run: python train.py
