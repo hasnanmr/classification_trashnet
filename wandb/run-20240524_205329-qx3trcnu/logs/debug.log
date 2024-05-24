@@ -18,3 +18,12 @@ config: {'epochs': 15, 'batch_size': 32, 'lr': 0.0001}
 2024-05-24 20:53:29,181 INFO    MainThread:11404 [wandb_init.py:init():622] backend started and connected
 2024-05-24 20:53:29,181 INFO    MainThread:11404 [wandb_init.py:init():711] updated telemetry
 2024-05-24 20:53:29,208 INFO    MainThread:11404 [wandb_init.py:init():744] communicating run to backend with 600.0 second timeout
+2024-05-24 20:53:30,561 INFO    MainThread:11404 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-24 20:53:30,872 INFO    MainThread:11404 [wandb_run.py:_on_init():2405] got version response 
+2024-05-24 20:53:30,872 INFO    MainThread:11404 [wandb_init.py:init():795] starting run threads in backend
+2024-05-24 20:53:31,084 INFO    MainThread:11404 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-24 20:53:31,084 INFO    MainThread:11404 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-24 20:53:31,084 INFO    MainThread:11404 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-24 20:53:31,084 INFO    MainThread:11404 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-24 20:53:31,084 INFO    MainThread:11404 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-24 20:53:32,228 INFO    MainThread:11404 [wandb_watch.py:watch():51] Watching

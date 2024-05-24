@@ -1,1 +1,1 @@
-{"train/train_loss": 1.5045404434204102, "train/epoch": 0.905511811023622, "train/example_ct": 3680, "_timestamp": 1716561789.2983978, "_runtime": 2980.117010831833, "_step": 114}
+{"train/train_loss": 1.3426051139831543, "train/epoch": 1.1338582677165354, "train/example_ct": 4587, "_timestamp": 1716562814.0584626, "_runtime": 4004.8770756721497, "_step": 143, "val/val_loss": 1.3647711277008057, "val/val_accuracy": 0.7049504950495049}
