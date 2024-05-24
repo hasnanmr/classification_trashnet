@@ -13,9 +13,10 @@ import os
 # Get the W&B API key from the environment variable
 wandb_api_key = os.getenv('WANDB_API_KEY')
 if wandb_api_key:
-    wandb.login(key=wandb_api_key)
+    wandb.login(key=wandb_api_key, relogin=True)  
 else:
-    wandb.login()
+    raise ValueError("W&B API key not found in environment variables")
+
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
@@ -85,11 +86,11 @@ def get_model():
 
 def log_image_table(images, predicted, labels, probs):
     "Log a wandb.Table with (img, pred, target, scores)"
-    # 🐝 Create a wandb Table to log images, labels and predictions to
-    table = wandb.Table(columns=["image", "pred", "target"]+[f"score_{i}" for i in range(10)])
+    num_classes = 6
+    table = wandb.Table(columns=["image", "pred", "target"] + [f"score_{i}" for i in range(num_classes)])
     for img, pred, targ, prob in zip(images.to("cpu"), predicted.to("cpu"), labels.to("cpu"), probs.to("cpu")):
-        table.add_data(wandb.Image(img[0].numpy()*255), pred, targ, *prob.numpy())
-    wandb.log({"predictions_table":table}, commit=False)
+        table.add_data(wandb.Image(img.numpy().transpose(1, 2, 0)), pred.item(), targ.item(), *prob.numpy())
+    wandb.log({"predictions_table": table}, commit=False)
 
 def validate_model(model, valid_dl, loss_func, log_images=False, batch_idx=0):
     "Compute performance of the model on the validation dataset and log a wandb.Table"
@@ -118,7 +119,7 @@ import math
 for _ in range(15):
     # 🐝 initialise a wandb run
     wandb.init(
-        project="trashnet-classification",
+        project="classification_trashnet",
         config={
             "epochs": 15,
             "batch_size": 32,
