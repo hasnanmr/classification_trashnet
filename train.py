@@ -7,6 +7,15 @@ import torch.nn as nn
 import torch.optim as optim
 from torchvision.models import resnet50, ResNet50_Weights
 import wandb
+import os
+
+
+# Get the W&B API key from the environment variable
+wandb_api_key = os.getenv('WANDB_API_KEY')
+if wandb_api_key:
+    wandb.login(key=wandb_api_key)
+else:
+    wandb.login()
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
@@ -60,7 +69,6 @@ train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
 val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
 
-wandb.login()
 
 def get_model():
     "A simple model"
