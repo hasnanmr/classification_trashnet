@@ -15,7 +15,7 @@ wandb_api_key = os.getenv('WANDB_API_KEY')
 if wandb_api_key:
     wandb.login(key=wandb_api_key)
 else:
-    wandb.login()
+    wandb.login('79a6726d2cd2ac1df80c05253a2e8aff32715796')
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
