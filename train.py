@@ -11,7 +11,7 @@ import os
 
 
 # Get the W&B API key from the environment variable
-wandb_api_key = os.getenv('WANDB_API_KEY')
+wandb_api_key = os.getenv('wan_db')
 if wandb_api_key:
     wandb.login(key=wandb_api_key, relogin=True)  
 else:
