@@ -1,10 +1,10 @@
-name: CI/CD Pipeline for Deep Learning with PyTorch
+name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
