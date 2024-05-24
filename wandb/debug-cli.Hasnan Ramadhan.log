@@ -22877,3 +22877,654 @@
 2024-05-24 22:00:25 DEBUG header: Via: 1.1 google
 2024-05-24 22:00:25 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 2024-05-24 22:00:25 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:00:35 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:00:35 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:00:36 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:00:36 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:00:36 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:00:36 DEBUG header: Vary: Origin
+2024-05-24 22:00:36 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:00:36 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:00:36 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:00:36 DEBUG header: Date: Fri, 24 May 2024 15:00:35 GMT
+2024-05-24 22:00:36 DEBUG header: Via: 1.1 google
+2024-05-24 22:00:36 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:00:36 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:00:36 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/r7p6z3bi/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 3185\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:00:36 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.3503724336624146, \\"train/epoch\\": 1.75, \\"train/example_ct\\": 3557, \\"_timestamp\\": 1716562836.2642238, \\"_runtime\\": 3165.9277527332306, \\"_step\\": 111, \\"val/val_loss\\": 1.546363353729248, \\"val/val_accuracy\\": 0.5079365079365079}"]}, "wandb-history.jsonl": {"offset": 107, "content": ["{\\"train/train_loss\\": 1.4606302976608276, \\"train/epoch\\": 1.6875, \\"train/example_ct\\": 3429, \\"_timestamp\\": 1716562796.0819597, \\"_runtime\\": 3125.7454886436462, \\"_step\\": 107}", "{\\"train/train_loss\\": 1.4697425365447998, \\"train/epoch\\": 1.703125, \\"train/example_ct\\": 3461, \\"_timestamp\\": 1716562803.8814435, \\"_runtime\\": 3133.5449724197388, \\"_step\\": 108}", "{\\"train/train_loss\\": 1.480031967163086, \\"train/epoch\\": 1.71875, \\"train/example_ct\\": 3493, \\"_timestamp\\": 1716562810.8982096, \\"_runtime\\": 3140.5617384910583, \\"_step\\": 109}", "{\\"train/train_loss\\": 1.3570271730422974, \\"train/epoch\\": 1.734375, \\"train/example_ct\\": 3525, \\"_timestamp\\": 1716562819.8311186, \\"_runtime\\": 3149.494647502899, \\"_step\\": 110}", "{\\"train/train_loss\\": 1.3503724336624146, \\"train/epoch\\": 1.75, \\"train/example_ct\\": 3557, \\"_timestamp\\": 1716562836.2642238, \\"_runtime\\": 3165.9277527332306, \\"_step\\": 111}"]}, "wandb-events.jsonl": {"offset": 103, "content": ["{\\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 4.53, \\"system.gpu.process.0.memory\\": 4.53, \\"system.gpu.0.gpu\\": 5.13, \\"system.gpu.process.0.gpu\\": 5.13, \\"system.gpu.0.temp\\": 51.2, \\"system.gpu.process.0.temp\\": 51.2, \\"system.gpu.0.powerWatts\\": 5.46, \\"system.gpu.process.0.powerWatts\\": 5.46, \\"system.gpu.0.powerPercent\\": 15.61, \\"system.gpu.process.0.powerPercent\\": 15.61, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 15667.07, \\"system.disk.out\\": 4163.44, \\"system.cpu\\": 22.29, \\"system.cpu.0.cpu_percent\\": 26.43, \\"system.cpu.1.cpu_percent\\": 28.21, \\"system.cpu.2.cpu_percent\\": 33.23, \\"system.cpu.3.cpu_percent\\": 38.61, \\"system.cpu.4.cpu_percent\\": 44.62, \\"system.cpu.5.cpu_percent\\": 47.57, \\"system.cpu.6.cpu_percent\\": 50.87, \\"system.cpu.7.cpu_percent\\": 37.97, \\"system.cpu.8.cpu_percent\\": 72.78, \\"system.cpu.9.cpu_percent\\": 47.94, \\"system.cpu.10.cpu_percent\\": 50.72, \\"system.cpu.11.cpu_percent\\": 55.18, \\"system.cpu.12.cpu_percent\\": 43.33, \\"system.cpu.13.cpu_percent\\": 47.71, \\"system.cpu.14.cpu_percent\\": 44.61, \\"system.cpu.15.cpu_percent\\": 46.91, \\"system.cpu.16.cpu_percent\\": 47.47, \\"system.cpu.17.cpu_percent\\": 53.23, \\"system.cpu.18.cpu_percent\\": 59.43, \\"system.cpu.19.cpu_percent\\": 62.45, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1904.3, \\"system.memory\\": 88.19, \\"system.proc.memory.rssMB\\": 471.79, \\"system.proc.memory.percent\\": 2.93, \\"system.network.sent\\": 28589363.13, \\"system.network.recv\\": 29675650.33, \\"_wandb\\": true, \\"_timestamp\\": 1716562824.822988, \\"_runtime\\": 3154.486517}"]}}, "dropped": 0}'
+2024-05-24 22:00:37 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:00:37 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:00:37 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:00:37 DEBUG header: Ratelimit-Remaining: 993
+2024-05-24 22:00:37 DEBUG header: Ratelimit-Reset: 24
+2024-05-24 22:00:37 DEBUG header: Vary: Origin
+2024-05-24 22:00:37 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:00:37 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:00:37 DEBUG header: Date: Fri, 24 May 2024 15:00:36 GMT
+2024-05-24 22:00:37 DEBUG header: Via: 1.1 google
+2024-05-24 22:00:37 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:00:37 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:00:40 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:00:40 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:00:40 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:00:40 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:00:40 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:00:40 DEBUG header: Vary: Origin
+2024-05-24 22:00:40 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:00:40 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:00:40 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:00:40 DEBUG header: Date: Fri, 24 May 2024 15:00:40 GMT
+2024-05-24 22:00:40 DEBUG header: Via: 1.1 google
+2024-05-24 22:00:40 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:00:40 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:00:47 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/qx3trcnu/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2856\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:00:47 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.2983717918395996, \\"train/epoch\\": 1.141732283464567, \\"train/example_ct\\": 4619, \\"_timestamp\\": 1716562829.4210837, \\"_runtime\\": 4020.239696741104, \\"_step\\": 144, \\"val/val_loss\\": 1.3647711277008057, \\"val/val_accuracy\\": 0.7049504950495049}"]}, "wandb-history.jsonl": {"offset": 143, "content": ["{\\"train/train_loss\\": 1.3426051139831543, \\"train/epoch\\": 1.1338582677165354, \\"train/example_ct\\": 4587, \\"_timestamp\\": 1716562814.0584626, \\"_runtime\\": 4004.8770756721497, \\"_step\\": 143}", "{\\"train/train_loss\\": 1.2983717918395996, \\"train/epoch\\": 1.141732283464567, \\"train/example_ct\\": 4619, \\"_timestamp\\": 1716562829.4210837, \\"_runtime\\": 4020.239696741104, \\"_step\\": 144}", "{\\"train/train_loss\\": 1.329352617263794, \\"train/epoch\\": 1.1496062992125984, \\"train/example_ct\\": 4651, \\"_timestamp\\": 1716562847.1068416, \\"_runtime\\": 4037.9254546165466, \\"_step\\": 145}"]}, "wandb-events.jsonl": {"offset": 132, "content": ["{\\"system.cpu\\": 7.02, \\"system.cpu.0.cpu_percent\\": 24.15, \\"system.cpu.1.cpu_percent\\": 25.98, \\"system.cpu.2.cpu_percent\\": 31.39, \\"system.cpu.3.cpu_percent\\": 35.05, \\"system.cpu.4.cpu_percent\\": 39.75, \\"system.cpu.5.cpu_percent\\": 42.6, \\"system.cpu.6.cpu_percent\\": 47.26, \\"system.cpu.7.cpu_percent\\": 35.27, \\"system.cpu.8.cpu_percent\\": 70.11, \\"system.cpu.9.cpu_percent\\": 44.58, \\"system.cpu.10.cpu_percent\\": 46.75, \\"system.cpu.11.cpu_percent\\": 51.19, \\"system.cpu.12.cpu_percent\\": 41.75, \\"system.cpu.13.cpu_percent\\": 47.19, \\"system.cpu.14.cpu_percent\\": 43.23, \\"system.cpu.15.cpu_percent\\": 45.99, \\"system.cpu.16.cpu_percent\\": 45.8, \\"system.cpu.17.cpu_percent\\": 50.67, \\"system.cpu.18.cpu_percent\\": 57.03, \\"system.cpu.19.cpu_percent\\": 63.27, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 45235433.2, \\"system.network.recv\\": 51828577.07, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 2.2, \\"system.gpu.process.0.memory\\": 2.2, \\"system.gpu.0.gpu\\": 2.67, \\"system.gpu.process.0.gpu\\": 2.67, \\"system.gpu.0.temp\\": 52.73, \\"system.gpu.process.0.temp\\": 52.73, \\"system.gpu.0.powerWatts\\": 7.29, \\"system.gpu.process.0.powerWatts\\": 7.29, \\"system.gpu.0.powerPercent\\": 20.84, \\"system.gpu.process.0.powerPercent\\": 20.84, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 18168.18, \\"system.disk.out\\": 4603.9, \\"system.proc.memory.availableMB\\": 1894.06, \\"system.memory\\": 88.25, \\"system.proc.memory.rssMB\\": 629.66, \\"system.proc.memory.percent\\": 3.91, \\"_wandb\\": true, \\"_timestamp\\": 1716562833.371109, \\"_runtime\\": 4024.189722}"]}}, "dropped": 0}'
+2024-05-24 22:00:47 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:00:47 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:00:47 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:00:47 DEBUG header: Ratelimit-Remaining: 990
+2024-05-24 22:00:47 DEBUG header: Ratelimit-Reset: 13
+2024-05-24 22:00:47 DEBUG header: Vary: Origin
+2024-05-24 22:00:47 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:00:47 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:00:47 DEBUG header: Date: Fri, 24 May 2024 15:00:47 GMT
+2024-05-24 22:00:47 DEBUG header: Via: 1.1 google
+2024-05-24 22:00:47 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:00:47 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:00:50 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:00:50 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:00:51 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:00:51 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:00:51 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:00:51 DEBUG header: Vary: Origin
+2024-05-24 22:00:51 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:00:51 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:00:51 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:00:51 DEBUG header: Date: Fri, 24 May 2024 15:00:50 GMT
+2024-05-24 22:00:51 DEBUG header: Via: 1.1 google
+2024-05-24 22:00:51 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:00:51 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:00:55 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:00:55 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:00:55 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:00:55 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:00:55 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:00:55 DEBUG header: Vary: Origin
+2024-05-24 22:00:55 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:00:55 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:00:55 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:00:55 DEBUG header: Date: Fri, 24 May 2024 15:00:55 GMT
+2024-05-24 22:00:55 DEBUG header: Via: 1.1 google
+2024-05-24 22:00:55 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:00:55 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:05 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:05 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:01:06 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:06 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:06 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:06 DEBUG header: Vary: Origin
+2024-05-24 22:01:06 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:06 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:06 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:01:06 DEBUG header: Date: Fri, 24 May 2024 15:01:05 GMT
+2024-05-24 22:01:06 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:06 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:06 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:10 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:10 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:01:10 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:10 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:10 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:10 DEBUG header: Vary: Origin
+2024-05-24 22:01:10 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:10 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:10 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:01:10 DEBUG header: Date: Fri, 24 May 2024 15:01:10 GMT
+2024-05-24 22:01:10 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:10 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:10 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:16 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/r7p6z3bi/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2559\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:16 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.4225832223892212, \\"train/epoch\\": 1.765625, \\"train/example_ct\\": 3589, \\"_timestamp\\": 1716562854.1328173, \\"_runtime\\": 3183.7963461875916, \\"_step\\": 112, \\"val/val_loss\\": 1.546363353729248, \\"val/val_accuracy\\": 0.5079365079365079}"]}, "wandb-history.jsonl": {"offset": 112, "content": ["{\\"train/train_loss\\": 1.4225832223892212, \\"train/epoch\\": 1.765625, \\"train/example_ct\\": 3589, \\"_timestamp\\": 1716562854.1328173, \\"_runtime\\": 3183.7963461875916, \\"_step\\": 112}", "{\\"train/train_loss\\": 1.389135718345642, \\"train/epoch\\": 1.78125, \\"train/example_ct\\": 3621, \\"_timestamp\\": 1716562876.6687365, \\"_runtime\\": 3206.3322653770447, \\"_step\\": 113}"]}, "wandb-events.jsonl": {"offset": 104, "content": ["{\\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 9.0, \\"system.gpu.process.0.memory\\": 9.0, \\"system.gpu.0.gpu\\": 13.33, \\"system.gpu.process.0.gpu\\": 13.33, \\"system.gpu.0.temp\\": 54.0, \\"system.gpu.process.0.temp\\": 54.0, \\"system.gpu.0.powerWatts\\": 10.7, \\"system.gpu.process.0.powerWatts\\": 10.7, \\"system.gpu.0.powerPercent\\": 30.58, \\"system.gpu.process.0.powerPercent\\": 30.58, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 15843.08, \\"system.disk.out\\": 4173.48, \\"system.cpu\\": 24.66, \\"system.cpu.0.cpu_percent\\": 30.33, \\"system.cpu.1.cpu_percent\\": 32.03, \\"system.cpu.2.cpu_percent\\": 36.85, \\"system.cpu.3.cpu_percent\\": 44.45, \\"system.cpu.4.cpu_percent\\": 47.97, \\"system.cpu.5.cpu_percent\\": 54.25, \\"system.cpu.6.cpu_percent\\": 58.05, \\"system.cpu.7.cpu_percent\\": 41.97, \\"system.cpu.8.cpu_percent\\": 74.38, \\"system.cpu.9.cpu_percent\\": 53.21, \\"system.cpu.10.cpu_percent\\": 56.77, \\"system.cpu.11.cpu_percent\\": 60.41, \\"system.cpu.12.cpu_percent\\": 38.65, \\"system.cpu.13.cpu_percent\\": 47.09, \\"system.cpu.14.cpu_percent\\": 40.39, \\"system.cpu.15.cpu_percent\\": 41.54, \\"system.cpu.16.cpu_percent\\": 46.6, \\"system.cpu.17.cpu_percent\\": 49.64, \\"system.cpu.18.cpu_percent\\": 54.43, \\"system.cpu.19.cpu_percent\\": 61.07, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 2011.34, \\"system.memory\\": 87.51, \\"system.proc.memory.rssMB\\": 479.48, \\"system.proc.memory.percent\\": 2.98, \\"_wandb\\": true, \\"_timestamp\\": 1716562854.848339, \\"_runtime\\": 3184.511868}"]}}, "dropped": 0}'
+2024-05-24 22:01:17 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:17 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:17 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:01:17 DEBUG header: Ratelimit-Remaining: 996
+2024-05-24 22:01:17 DEBUG header: Ratelimit-Reset: 44
+2024-05-24 22:01:17 DEBUG header: Vary: Origin
+2024-05-24 22:01:17 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:01:17 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:01:17 DEBUG header: Date: Fri, 24 May 2024 15:01:17 GMT
+2024-05-24 22:01:17 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:17 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:17 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:20 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:20 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:01:21 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:21 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:21 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:21 DEBUG header: Vary: Origin
+2024-05-24 22:01:21 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:21 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:21 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:01:21 DEBUG header: Date: Fri, 24 May 2024 15:01:20 GMT
+2024-05-24 22:01:21 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:21 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:21 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:25 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:25 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:01:25 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:25 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:25 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:25 DEBUG header: Vary: Origin
+2024-05-24 22:01:25 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:25 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:25 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:01:25 DEBUG header: Date: Fri, 24 May 2024 15:01:25 GMT
+2024-05-24 22:01:25 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:25 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:25 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:33 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/qx3trcnu/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 4289\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:33 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.3263957500457764, \\"train/epoch\\": 1.1574803149606299, \\"train/example_ct\\": 4683, \\"_timestamp\\": 1716562873.9935954, \\"_runtime\\": 4064.8122084140778, \\"_step\\": 146, \\"val/val_loss\\": 1.3647711277008057, \\"val/val_accuracy\\": 0.7049504950495049}"]}, "wandb-history.jsonl": {"offset": 146, "content": ["{\\"train/train_loss\\": 1.3263957500457764, \\"train/epoch\\": 1.1574803149606299, \\"train/example_ct\\": 4683, \\"_timestamp\\": 1716562873.9935954, \\"_runtime\\": 4064.8122084140778, \\"_step\\": 146}"]}, "wandb-events.jsonl": {"offset": 133, "content": ["{\\"system.cpu\\": 10.09, \\"system.cpu.0.cpu_percent\\": 32.5, \\"system.cpu.1.cpu_percent\\": 34.38, \\"system.cpu.2.cpu_percent\\": 38.81, \\"system.cpu.3.cpu_percent\\": 46.68, \\"system.cpu.4.cpu_percent\\": 52.47, \\"system.cpu.5.cpu_percent\\": 59.05, \\"system.cpu.6.cpu_percent\\": 61.12, \\"system.cpu.7.cpu_percent\\": 43.38, \\"system.cpu.8.cpu_percent\\": 76.35, \\"system.cpu.9.cpu_percent\\": 56.13, \\"system.cpu.10.cpu_percent\\": 59.51, \\"system.cpu.11.cpu_percent\\": 63.96, \\"system.cpu.12.cpu_percent\\": 40.68, \\"system.cpu.13.cpu_percent\\": 48.69, \\"system.cpu.14.cpu_percent\\": 43.59, \\"system.cpu.15.cpu_percent\\": 44.81, \\"system.cpu.16.cpu_percent\\": 49.59, \\"system.cpu.17.cpu_percent\\": 53.94, \\"system.cpu.18.cpu_percent\\": 57.71, \\"system.cpu.19.cpu_percent\\": 62.69, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 45307641.07, \\"system.network.recv\\": 51895640.13, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 11.0, \\"system.gpu.process.0.memory\\": 11.0, \\"system.gpu.0.gpu\\": 13.33, \\"system.gpu.process.0.gpu\\": 13.33, \\"system.gpu.0.temp\\": 54.33, \\"system.gpu.process.0.temp\\": 54.33, \\"system.gpu.0.powerWatts\\": 9.03, \\"system.gpu.process.0.powerWatts\\": 9.03, \\"system.gpu.0.powerPercent\\": 25.81, \\"system.gpu.process.0.powerPercent\\": 25.81, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 18361.98, \\"system.disk.out\\": 4614.47, \\"system.proc.memory.availableMB\\": 2015.51, \\"system.memory\\": 87.45, \\"system.proc.memory.rssMB\\": 600.32, \\"system.proc.memory.percent\\": 3.73, \\"_wandb\\": true, \\"_timestamp\\": 1716562863.374784, \\"_runtime\\": 4054.193397}", "{\\"system.cpu\\": 7.47, \\"system.cpu.0.cpu_percent\\": 22.49, \\"system.cpu.1.cpu_percent\\": 21.46, \\"system.cpu.2.cpu_percent\\": 33.42, \\"system.cpu.3.cpu_percent\\": 36.48, \\"system.cpu.4.cpu_percent\\": 37.49, \\"system.cpu.5.cpu_percent\\": 41.17, \\"system.cpu.6.cpu_percent\\": 53.23, \\"system.cpu.7.cpu_percent\\": 40.11, \\"system.cpu.8.cpu_percent\\": 71.43, \\"system.cpu.9.cpu_percent\\": 49.93, \\"system.cpu.10.cpu_percent\\": 51.58, \\"system.cpu.11.cpu_percent\\": 51.52, \\"system.cpu.12.cpu_percent\\": 45.51, \\"system.cpu.13.cpu_percent\\": 48.02, \\"system.cpu.14.cpu_percent\\": 44.72, \\"system.cpu.15.cpu_percent\\": 46.44, \\"system.cpu.16.cpu_percent\\": 52.76, \\"system.cpu.17.cpu_percent\\": 58.34, \\"system.cpu.18.cpu_percent\\": 58.67, \\"system.cpu.19.cpu_percent\\": 61.65, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 45577837.73, \\"system.network.recv\\": 51958534.93, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.process.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.process.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 52.67, \\"system.gpu.process.0.temp\\": 52.67, \\"system.gpu.0.powerWatts\\": 6.95, \\"system.gpu.process.0.powerWatts\\": 6.95, \\"system.gpu.0.powerPercent\\": 19.86, \\"system.gpu.process.0.powerPercent\\": 19.86, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 18522.13, \\"system.disk.out\\": 4650.96, \\"system.proc.memory.availableMB\\": 1893.57, \\"system.memory\\": 88.25, \\"system.proc.memory.rssMB\\": 612.76, \\"system.proc.memory.percent\\": 3.8, \\"_wandb\\": true, \\"_timestamp\\": 1716562893.389214, \\"_runtime\\": 4084.207827}"]}}, "dropped": 0}'
+2024-05-24 22:01:33 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:33 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:33 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:01:33 DEBUG header: Ratelimit-Remaining: 993
+2024-05-24 22:01:33 DEBUG header: Ratelimit-Reset: 27
+2024-05-24 22:01:33 DEBUG header: Vary: Origin
+2024-05-24 22:01:33 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:01:33 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:01:33 DEBUG header: Date: Fri, 24 May 2024 15:01:33 GMT
+2024-05-24 22:01:33 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:33 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:33 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:35 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:35 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:01:36 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:36 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:36 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:36 DEBUG header: Vary: Origin
+2024-05-24 22:01:36 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:36 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:36 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:01:36 DEBUG header: Date: Fri, 24 May 2024 15:01:35 GMT
+2024-05-24 22:01:36 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:36 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:36 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:40 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:40 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:01:40 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:40 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:40 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:40 DEBUG header: Vary: Origin
+2024-05-24 22:01:40 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:40 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:40 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:01:40 DEBUG header: Date: Fri, 24 May 2024 15:01:40 GMT
+2024-05-24 22:01:40 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:40 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:40 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:50 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:50 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:01:51 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:51 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:51 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:51 DEBUG header: Vary: Origin
+2024-05-24 22:01:51 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:51 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:51 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:01:51 DEBUG header: Date: Fri, 24 May 2024 15:01:50 GMT
+2024-05-24 22:01:51 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:51 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:51 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:54 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/r7p6z3bi/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 4258\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:54 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.3645389080047607, \\"train/epoch\\": 1.796875, \\"train/example_ct\\": 3653, \\"_timestamp\\": 1716562898.6913006, \\"_runtime\\": 3228.3548295497894, \\"_step\\": 114, \\"val/val_loss\\": 1.546363353729248, \\"val/val_accuracy\\": 0.5079365079365079}"]}, "wandb-history.jsonl": {"offset": 114, "content": ["{\\"train/train_loss\\": 1.3645389080047607, \\"train/epoch\\": 1.796875, \\"train/example_ct\\": 3653, \\"_timestamp\\": 1716562898.6913006, \\"_runtime\\": 3228.3548295497894, \\"_step\\": 114}"]}, "wandb-events.jsonl": {"offset": 105, "content": ["{\\"system.network.sent\\": 28687601.0, \\"system.network.recv\\": 29737843.27, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 16022.62, \\"system.disk.out\\": 4188.74, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 1.33, \\"system.gpu.process.0.memory\\": 1.33, \\"system.gpu.0.gpu\\": 1.87, \\"system.gpu.process.0.gpu\\": 1.87, \\"system.gpu.0.temp\\": 53.73, \\"system.gpu.process.0.temp\\": 53.73, \\"system.gpu.0.powerWatts\\": 7.9, \\"system.gpu.process.0.powerWatts\\": 7.9, \\"system.gpu.0.powerPercent\\": 22.57, \\"system.gpu.process.0.powerPercent\\": 22.57, \\"system.cpu\\": 21.19, \\"system.cpu.0.cpu_percent\\": 22.49, \\"system.cpu.1.cpu_percent\\": 21.38, \\"system.cpu.2.cpu_percent\\": 33.44, \\"system.cpu.3.cpu_percent\\": 34.93, \\"system.cpu.4.cpu_percent\\": 36.94, \\"system.cpu.5.cpu_percent\\": 40.1, \\"system.cpu.6.cpu_percent\\": 53.95, \\"system.cpu.7.cpu_percent\\": 41.87, \\"system.cpu.8.cpu_percent\\": 70.87, \\"system.cpu.9.cpu_percent\\": 51.12, \\"system.cpu.10.cpu_percent\\": 51.43, \\"system.cpu.11.cpu_percent\\": 51.77, \\"system.cpu.12.cpu_percent\\": 48.38, \\"system.cpu.13.cpu_percent\\": 50.2, \\"system.cpu.14.cpu_percent\\": 47.46, \\"system.cpu.15.cpu_percent\\": 48.75, \\"system.cpu.16.cpu_percent\\": 55.3, \\"system.cpu.17.cpu_percent\\": 62.35, \\"system.cpu.18.cpu_percent\\": 61.7, \\"system.cpu.19.cpu_percent\\": 62.78, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1947.92, \\"system.memory\\": 87.93, \\"system.proc.memory.rssMB\\": 453.15, \\"system.proc.memory.percent\\": 2.81, \\"_wandb\\": true, \\"_timestamp\\": 1716562884.866664, \\"_runtime\\": 3214.530193}", "{\\"system.network.sent\\": 29040963.87, \\"system.network.recv\\": 29969312.73, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 16167.1, \\"system.disk.out\\": 4221.89, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 5.33, \\"system.gpu.process.0.memory\\": 5.33, \\"system.gpu.0.gpu\\": 6.6, \\"system.gpu.process.0.gpu\\": 6.6, \\"system.gpu.0.temp\\": 52.2, \\"system.gpu.process.0.temp\\": 52.2, \\"system.gpu.0.powerWatts\\": 5.49, \\"system.gpu.process.0.powerWatts\\": 5.49, \\"system.gpu.0.powerPercent\\": 15.68, \\"system.gpu.process.0.powerPercent\\": 15.68, \\"system.cpu\\": 17.78, \\"system.cpu.0.cpu_percent\\": 19.33, \\"system.cpu.1.cpu_percent\\": 19.67, \\"system.cpu.2.cpu_percent\\": 26.5, \\"system.cpu.3.cpu_percent\\": 29.03, \\"system.cpu.4.cpu_percent\\": 27.94, \\"system.cpu.5.cpu_percent\\": 31.89, \\"system.cpu.6.cpu_percent\\": 33.8, \\"system.cpu.7.cpu_percent\\": 31.67, \\"system.cpu.8.cpu_percent\\": 52.9, \\"system.cpu.9.cpu_percent\\": 39.39, \\"system.cpu.10.cpu_percent\\": 44.75, \\"system.cpu.11.cpu_percent\\": 41.98, \\"system.cpu.12.cpu_percent\\": 46.71, \\"system.cpu.13.cpu_percent\\": 51.26, \\"system.cpu.14.cpu_percent\\": 46.23, \\"system.cpu.15.cpu_percent\\": 48.16, \\"system.cpu.16.cpu_percent\\": 55.66, \\"system.cpu.17.cpu_percent\\": 56.88, \\"system.cpu.18.cpu_percent\\": 67.37, \\"system.cpu.19.cpu_percent\\": 74.68, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1729.17, \\"system.memory\\": 89.28, \\"system.proc.memory.rssMB\\": 449.09, \\"system.proc.memory.percent\\": 2.79, \\"_wandb\\": true, \\"_timestamp\\": 1716562914.890265, \\"_runtime\\": 3244.553794}"]}}, "dropped": 0}'
+2024-05-24 22:01:55 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:55 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:55 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:01:55 DEBUG header: Ratelimit-Remaining: 990
+2024-05-24 22:01:55 DEBUG header: Ratelimit-Reset: 5
+2024-05-24 22:01:55 DEBUG header: Vary: Origin
+2024-05-24 22:01:55 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:01:55 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:01:55 DEBUG header: Date: Fri, 24 May 2024 15:01:55 GMT
+2024-05-24 22:01:55 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:55 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:55 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:01:55 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:01:55 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:01:55 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:01:55 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:01:55 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:01:55 DEBUG header: Vary: Origin
+2024-05-24 22:01:55 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:01:55 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:01:55 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:01:55 DEBUG header: Date: Fri, 24 May 2024 15:01:55 GMT
+2024-05-24 22:01:55 DEBUG header: Via: 1.1 google
+2024-05-24 22:01:55 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:01:55 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:03 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/qx3trcnu/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2654\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:03 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.3314346075057983, \\"train/epoch\\": 1.1732283464566928, \\"train/example_ct\\": 4747, \\"_timestamp\\": 1716562921.308264, \\"_runtime\\": 4112.126877069473, \\"_step\\": 148, \\"val/val_loss\\": 1.3647711277008057, \\"val/val_accuracy\\": 0.7049504950495049}"]}, "wandb-history.jsonl": {"offset": 147, "content": ["{\\"train/train_loss\\": 1.2430078983306885, \\"train/epoch\\": 1.1653543307086613, \\"train/example_ct\\": 4715, \\"_timestamp\\": 1716562899.3250654, \\"_runtime\\": 4090.1436784267426, \\"_step\\": 147}", "{\\"train/train_loss\\": 1.3314346075057983, \\"train/epoch\\": 1.1732283464566928, \\"train/example_ct\\": 4747, \\"_timestamp\\": 1716562921.308264, \\"_runtime\\": 4112.126877069473, \\"_step\\": 148}"]}, "wandb-events.jsonl": {"offset": 135, "content": ["{\\"system.cpu\\": 6.76, \\"system.cpu.0.cpu_percent\\": 19.05, \\"system.cpu.1.cpu_percent\\": 19.55, \\"system.cpu.2.cpu_percent\\": 26.14, \\"system.cpu.3.cpu_percent\\": 29.15, \\"system.cpu.4.cpu_percent\\": 27.51, \\"system.cpu.5.cpu_percent\\": 31.73, \\"system.cpu.6.cpu_percent\\": 35.65, \\"system.cpu.7.cpu_percent\\": 33.74, \\"system.cpu.8.cpu_percent\\": 54.7, \\"system.cpu.9.cpu_percent\\": 40.85, \\"system.cpu.10.cpu_percent\\": 44.65, \\"system.cpu.11.cpu_percent\\": 42.59, \\"system.cpu.12.cpu_percent\\": 46.88, \\"system.cpu.13.cpu_percent\\": 52.21, \\"system.cpu.14.cpu_percent\\": 47.04, \\"system.cpu.15.cpu_percent\\": 47.61, \\"system.cpu.16.cpu_percent\\": 54.56, \\"system.cpu.17.cpu_percent\\": 57.0, \\"system.cpu.18.cpu_percent\\": 67.63, \\"system.cpu.19.cpu_percent\\": 72.4, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 45818332.4, \\"system.network.recv\\": 52470204.07, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.process.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.process.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 51.6, \\"system.gpu.process.0.temp\\": 51.6, \\"system.gpu.0.powerWatts\\": 5.37, \\"system.gpu.process.0.powerWatts\\": 5.37, \\"system.gpu.0.powerPercent\\": 15.34, \\"system.gpu.process.0.powerPercent\\": 15.34, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 18709.3, \\"system.disk.out\\": 4670.34, \\"system.proc.memory.availableMB\\": 1659.73, \\"system.memory\\": 89.66, \\"system.proc.memory.rssMB\\": 628.76, \\"system.proc.memory.percent\\": 3.9, \\"_wandb\\": true, \\"_timestamp\\": 1716562923.396268, \\"_runtime\\": 4114.214881}"]}}, "dropped": 0}'
+2024-05-24 22:02:03 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:03 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:03 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:02:03 DEBUG header: Ratelimit-Remaining: 996
+2024-05-24 22:02:03 DEBUG header: Ratelimit-Reset: 57
+2024-05-24 22:02:03 DEBUG header: Vary: Origin
+2024-05-24 22:02:03 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:02:03 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:02:03 DEBUG header: Date: Fri, 24 May 2024 15:02:03 GMT
+2024-05-24 22:02:03 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:03 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:03 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:05 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:05 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:02:06 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:06 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:06 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:06 DEBUG header: Vary: Origin
+2024-05-24 22:02:06 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:06 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:06 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:02:06 DEBUG header: Date: Fri, 24 May 2024 15:02:06 GMT
+2024-05-24 22:02:06 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:06 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:06 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:10 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:10 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:02:10 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:10 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:10 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:10 DEBUG header: Vary: Origin
+2024-05-24 22:02:10 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:10 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:10 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:02:10 DEBUG header: Date: Fri, 24 May 2024 15:02:10 GMT
+2024-05-24 22:02:10 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:10 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:10 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:20 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:20 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:02:21 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:21 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:21 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:21 DEBUG header: Vary: Origin
+2024-05-24 22:02:21 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:21 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:21 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:02:21 DEBUG header: Date: Fri, 24 May 2024 15:02:21 GMT
+2024-05-24 22:02:21 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:21 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:21 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:25 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/r7p6z3bi/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2630\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:25 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.3515866994857788, \\"train/epoch\\": 1.828125, \\"train/example_ct\\": 3717, \\"_timestamp\\": 1716562939.2268977, \\"_runtime\\": 3268.890426635742, \\"_step\\": 116, \\"val/val_loss\\": 1.546363353729248, \\"val/val_accuracy\\": 0.5079365079365079}"]}, "wandb-history.jsonl": {"offset": 115, "content": ["{\\"train/train_loss\\": 1.4174141883850098, \\"train/epoch\\": 1.8125, \\"train/example_ct\\": 3685, \\"_timestamp\\": 1716562919.9962766, \\"_runtime\\": 3249.65980553627, \\"_step\\": 115}", "{\\"train/train_loss\\": 1.3515866994857788, \\"train/epoch\\": 1.828125, \\"train/example_ct\\": 3717, \\"_timestamp\\": 1716562939.2268977, \\"_runtime\\": 3268.890426635742, \\"_step\\": 116}"]}, "wandb-events.jsonl": {"offset": 107, "content": ["{\\"system.network.sent\\": 29186217.67, \\"system.network.recv\\": 30397390.2, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 16379.63, \\"system.disk.out\\": 4241.54, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 5.67, \\"system.gpu.process.0.memory\\": 5.67, \\"system.gpu.0.gpu\\": 6.67, \\"system.gpu.process.0.gpu\\": 6.67, \\"system.gpu.0.temp\\": 51.4, \\"system.gpu.process.0.temp\\": 51.4, \\"system.gpu.0.powerWatts\\": 4.49, \\"system.gpu.process.0.powerWatts\\": 4.49, \\"system.gpu.0.powerPercent\\": 12.82, \\"system.gpu.process.0.powerPercent\\": 12.82, \\"system.cpu\\": 18.35, \\"system.cpu.0.cpu_percent\\": 25.71, \\"system.cpu.1.cpu_percent\\": 25.45, \\"system.cpu.2.cpu_percent\\": 26.86, \\"system.cpu.3.cpu_percent\\": 30.01, \\"system.cpu.4.cpu_percent\\": 33.11, \\"system.cpu.5.cpu_percent\\": 35.42, \\"system.cpu.6.cpu_percent\\": 36.59, \\"system.cpu.7.cpu_percent\\": 29.23, \\"system.cpu.8.cpu_percent\\": 59.63, \\"system.cpu.9.cpu_percent\\": 35.4, \\"system.cpu.10.cpu_percent\\": 43.78, \\"system.cpu.11.cpu_percent\\": 46.71, \\"system.cpu.12.cpu_percent\\": 49.38, \\"system.cpu.13.cpu_percent\\": 55.52, \\"system.cpu.14.cpu_percent\\": 48.85, \\"system.cpu.15.cpu_percent\\": 49.99, \\"system.cpu.16.cpu_percent\\": 54.68, \\"system.cpu.17.cpu_percent\\": 59.41, \\"system.cpu.18.cpu_percent\\": 70.89, \\"system.cpu.19.cpu_percent\\": 70.77, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1590.09, \\"system.memory\\": 90.17, \\"system.proc.memory.rssMB\\": 473.42, \\"system.proc.memory.percent\\": 2.94, \\"_wandb\\": true, \\"_timestamp\\": 1716562945.056344, \\"_runtime\\": 3274.719873}"]}}, "dropped": 0}'
+2024-05-24 22:02:25 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:25 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:02:25 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:25 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:25 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:02:25 DEBUG header: Ratelimit-Remaining: 993
+2024-05-24 22:02:25 DEBUG header: Ratelimit-Reset: 35
+2024-05-24 22:02:25 DEBUG header: Vary: Origin
+2024-05-24 22:02:25 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:02:25 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:02:25 DEBUG header: Date: Fri, 24 May 2024 15:02:25 GMT
+2024-05-24 22:02:25 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:25 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:25 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:25 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:25 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:25 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:25 DEBUG header: Vary: Origin
+2024-05-24 22:02:25 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:25 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:25 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:02:25 DEBUG header: Date: Fri, 24 May 2024 15:02:25 GMT
+2024-05-24 22:02:25 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:25 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:25 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:33 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/qx3trcnu/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2462\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:33 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.2576037645339966, \\"train/epoch\\": 1.1811023622047243, \\"train/example_ct\\": 4779, \\"_timestamp\\": 1716562945.4147134, \\"_runtime\\": 4136.233326435089, \\"_step\\": 149, \\"val/val_loss\\": 1.3647711277008057, \\"val/val_accuracy\\": 0.7049504950495049}"]}, "wandb-history.jsonl": {"offset": 149, "content": ["{\\"train/train_loss\\": 1.2576037645339966, \\"train/epoch\\": 1.1811023622047243, \\"train/example_ct\\": 4779, \\"_timestamp\\": 1716562945.4147134, \\"_runtime\\": 4136.233326435089, \\"_step\\": 149}"]}, "wandb-events.jsonl": {"offset": 136, "content": ["{\\"system.cpu\\": 7.17, \\"system.cpu.0.cpu_percent\\": 26.01, \\"system.cpu.1.cpu_percent\\": 25.8, \\"system.cpu.2.cpu_percent\\": 28.25, \\"system.cpu.3.cpu_percent\\": 30.67, \\"system.cpu.4.cpu_percent\\": 33.57, \\"system.cpu.5.cpu_percent\\": 35.98, \\"system.cpu.6.cpu_percent\\": 37.09, \\"system.cpu.7.cpu_percent\\": 30.16, \\"system.cpu.8.cpu_percent\\": 59.22, \\"system.cpu.9.cpu_percent\\": 36.29, \\"system.cpu.10.cpu_percent\\": 42.66, \\"system.cpu.11.cpu_percent\\": 44.73, \\"system.cpu.12.cpu_percent\\": 48.55, \\"system.cpu.13.cpu_percent\\": 53.41, \\"system.cpu.14.cpu_percent\\": 46.99, \\"system.cpu.15.cpu_percent\\": 48.83, \\"system.cpu.16.cpu_percent\\": 55.29, \\"system.cpu.17.cpu_percent\\": 58.99, \\"system.cpu.18.cpu_percent\\": 70.87, \\"system.cpu.19.cpu_percent\\": 70.77, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 45932590.67, \\"system.network.recv\\": 52728388.73, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.process.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.process.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 51.2, \\"system.gpu.process.0.temp\\": 51.2, \\"system.gpu.0.powerWatts\\": 4.69, \\"system.gpu.process.0.powerWatts\\": 4.69, \\"system.gpu.0.powerPercent\\": 13.4, \\"system.gpu.process.0.powerPercent\\": 13.4, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 18861.27, \\"system.disk.out\\": 4691.34, \\"system.proc.memory.availableMB\\": 1560.66, \\"system.memory\\": 90.35, \\"system.proc.memory.rssMB\\": 603.01, \\"system.proc.memory.percent\\": 3.74, \\"_wandb\\": true, \\"_timestamp\\": 1716562953.410753, \\"_runtime\\": 4144.229366}"]}}, "dropped": 0}'
+2024-05-24 22:02:33 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:33 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:33 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:02:33 DEBUG header: Ratelimit-Remaining: 990
+2024-05-24 22:02:33 DEBUG header: Ratelimit-Reset: 27
+2024-05-24 22:02:33 DEBUG header: Vary: Origin
+2024-05-24 22:02:33 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:02:33 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:02:33 DEBUG header: Date: Fri, 24 May 2024 15:02:33 GMT
+2024-05-24 22:02:33 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:33 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:33 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:35 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:35 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:02:36 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:36 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:36 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:36 DEBUG header: Vary: Origin
+2024-05-24 22:02:36 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:36 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:36 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:02:36 DEBUG header: Date: Fri, 24 May 2024 15:02:36 GMT
+2024-05-24 22:02:36 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:36 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:36 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:40 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:40 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:02:40 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:40 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:40 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:40 DEBUG header: Vary: Origin
+2024-05-24 22:02:40 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:40 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:40 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:02:40 DEBUG header: Date: Fri, 24 May 2024 15:02:40 GMT
+2024-05-24 22:02:40 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:40 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:40 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:50 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:50 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:02:51 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:51 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:51 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:51 DEBUG header: Vary: Origin
+2024-05-24 22:02:51 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:51 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:51 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:02:51 DEBUG header: Date: Fri, 24 May 2024 15:02:51 GMT
+2024-05-24 22:02:51 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:51 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:51 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:02:55 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:02:55 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:02:55 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:02:55 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:02:55 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:02:55 DEBUG header: Vary: Origin
+2024-05-24 22:02:55 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:02:55 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:02:55 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:02:55 DEBUG header: Date: Fri, 24 May 2024 15:02:55 GMT
+2024-05-24 22:02:55 DEBUG header: Via: 1.1 google
+2024-05-24 22:02:55 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:02:55 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:03 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/qx3trcnu/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2460\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:03 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.4049317836761475, \\"train/epoch\\": 1.188976377952756, \\"train/example_ct\\": 4811, \\"_timestamp\\": 1716562972.6477315, \\"_runtime\\": 4163.466344594955, \\"_step\\": 150, \\"val/val_loss\\": 1.3647711277008057, \\"val/val_accuracy\\": 0.7049504950495049}"]}, "wandb-history.jsonl": {"offset": 150, "content": ["{\\"train/train_loss\\": 1.4049317836761475, \\"train/epoch\\": 1.188976377952756, \\"train/example_ct\\": 4811, \\"_timestamp\\": 1716562972.6477315, \\"_runtime\\": 4163.466344594955, \\"_step\\": 150}"]}, "wandb-events.jsonl": {"offset": 137, "content": ["{\\"system.cpu\\": 5.67, \\"system.cpu.0.cpu_percent\\": 19.37, \\"system.cpu.1.cpu_percent\\": 18.5, \\"system.cpu.2.cpu_percent\\": 18.65, \\"system.cpu.3.cpu_percent\\": 20.43, \\"system.cpu.4.cpu_percent\\": 26.31, \\"system.cpu.5.cpu_percent\\": 26.81, \\"system.cpu.6.cpu_percent\\": 27.95, \\"system.cpu.7.cpu_percent\\": 24.97, \\"system.cpu.8.cpu_percent\\": 61.84, \\"system.cpu.9.cpu_percent\\": 35.59, \\"system.cpu.10.cpu_percent\\": 41.61, \\"system.cpu.11.cpu_percent\\": 44.31, \\"system.cpu.12.cpu_percent\\": 50.67, \\"system.cpu.13.cpu_percent\\": 52.92, \\"system.cpu.14.cpu_percent\\": 48.91, \\"system.cpu.15.cpu_percent\\": 51.09, \\"system.cpu.16.cpu_percent\\": 53.8, \\"system.cpu.17.cpu_percent\\": 58.31, \\"system.cpu.18.cpu_percent\\": 64.29, \\"system.cpu.19.cpu_percent\\": 80.45, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 46072531.67, \\"system.network.recv\\": 53112168.4, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.process.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.process.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 51.2, \\"system.gpu.process.0.temp\\": 51.2, \\"system.gpu.0.powerWatts\\": 7.49, \\"system.gpu.process.0.powerWatts\\": 7.49, \\"system.gpu.0.powerPercent\\": 21.39, \\"system.gpu.process.0.powerPercent\\": 21.39, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 18985.14, \\"system.disk.out\\": 4717.37, \\"system.proc.memory.availableMB\\": 1359.49, \\"system.memory\\": 91.53, \\"system.proc.memory.rssMB\\": 616.76, \\"system.proc.memory.percent\\": 3.83, \\"_wandb\\": true, \\"_timestamp\\": 1716562983.468429, \\"_runtime\\": 4174.287042}"]}}, "dropped": 0}'
+2024-05-24 22:03:03 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:03 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:03 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:03:03 DEBUG header: Ratelimit-Remaining: 996
+2024-05-24 22:03:03 DEBUG header: Ratelimit-Reset: 57
+2024-05-24 22:03:03 DEBUG header: Vary: Origin
+2024-05-24 22:03:03 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:03:03 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:03:03 DEBUG header: Date: Fri, 24 May 2024 15:03:03 GMT
+2024-05-24 22:03:03 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:03 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:03 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:05 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:05 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:03:06 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:06 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:06 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:06 DEBUG header: Vary: Origin
+2024-05-24 22:03:06 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:06 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:06 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:03:06 DEBUG header: Date: Fri, 24 May 2024 15:03:06 GMT
+2024-05-24 22:03:06 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:06 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:06 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:08 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/r7p6z3bi/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2628\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:08 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.4165934324264526, \\"train/epoch\\": 1.859375, \\"train/example_ct\\": 3781, \\"_timestamp\\": 1716562988.5628085, \\"_runtime\\": 3318.2263374328613, \\"_step\\": 118, \\"val/val_loss\\": 1.546363353729248, \\"val/val_accuracy\\": 0.5079365079365079}"]}, "wandb-history.jsonl": {"offset": 117, "content": ["{\\"train/train_loss\\": 1.3928132057189941, \\"train/epoch\\": 1.84375, \\"train/example_ct\\": 3749, \\"_timestamp\\": 1716562962.491719, \\"_runtime\\": 3292.155247926712, \\"_step\\": 117}", "{\\"train/train_loss\\": 1.4165934324264526, \\"train/epoch\\": 1.859375, \\"train/example_ct\\": 3781, \\"_timestamp\\": 1716562988.5628085, \\"_runtime\\": 3318.2263374328613, \\"_step\\": 118}"]}, "wandb-events.jsonl": {"offset": 108, "content": ["{\\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 16505.49, \\"system.disk.out\\": 4262.35, \\"system.network.sent\\": 29297827.0, \\"system.network.recv\\": 30670604.87, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.process.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.process.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 51.33, \\"system.gpu.process.0.temp\\": 51.33, \\"system.gpu.0.powerWatts\\": 7.76, \\"system.gpu.process.0.powerWatts\\": 7.76, \\"system.gpu.0.powerPercent\\": 22.17, \\"system.gpu.process.0.powerPercent\\": 22.17, \\"system.cpu\\": 17.04, \\"system.cpu.0.cpu_percent\\": 21.9, \\"system.cpu.1.cpu_percent\\": 21.0, \\"system.cpu.2.cpu_percent\\": 21.19, \\"system.cpu.3.cpu_percent\\": 23.65, \\"system.cpu.4.cpu_percent\\": 28.37, \\"system.cpu.5.cpu_percent\\": 28.81, \\"system.cpu.6.cpu_percent\\": 29.8, \\"system.cpu.7.cpu_percent\\": 27.83, \\"system.cpu.8.cpu_percent\\": 63.97, \\"system.cpu.9.cpu_percent\\": 37.83, \\"system.cpu.10.cpu_percent\\": 41.15, \\"system.cpu.11.cpu_percent\\": 44.12, \\"system.cpu.12.cpu_percent\\": 49.86, \\"system.cpu.13.cpu_percent\\": 51.85, \\"system.cpu.14.cpu_percent\\": 48.61, \\"system.cpu.15.cpu_percent\\": 50.91, \\"system.cpu.16.cpu_percent\\": 54.49, \\"system.cpu.17.cpu_percent\\": 58.39, \\"system.cpu.18.cpu_percent\\": 65.12, \\"system.cpu.19.cpu_percent\\": 79.77, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1398.32, \\"system.memory\\": 91.34, \\"system.proc.memory.rssMB\\": 458.36, \\"system.proc.memory.percent\\": 2.85, \\"_wandb\\": true, \\"_timestamp\\": 1716562975.06588, \\"_runtime\\": 3304.729409}"]}}, "dropped": 0}'
+2024-05-24 22:03:09 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:09 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:09 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:03:09 DEBUG header: Ratelimit-Remaining: 993
+2024-05-24 22:03:09 DEBUG header: Ratelimit-Reset: 51
+2024-05-24 22:03:09 DEBUG header: Vary: Origin
+2024-05-24 22:03:09 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:03:09 DEBUG header: X-Ratelimit-Remaining: 73
+2024-05-24 22:03:09 DEBUG header: Date: Fri, 24 May 2024 15:03:09 GMT
+2024-05-24 22:03:09 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:09 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:09 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:10 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:10 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:03:10 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:10 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:10 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:10 DEBUG header: Vary: Origin
+2024-05-24 22:03:10 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:10 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:10 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:03:10 DEBUG header: Date: Fri, 24 May 2024 15:03:10 GMT
+2024-05-24 22:03:10 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:10 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:10 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:20 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:20 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:03:21 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:21 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:21 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:21 DEBUG header: Vary: Origin
+2024-05-24 22:03:21 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:21 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:21 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:03:21 DEBUG header: Date: Fri, 24 May 2024 15:03:21 GMT
+2024-05-24 22:03:21 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:21 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:21 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:25 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:25 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:03:25 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:25 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:25 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:25 DEBUG header: Vary: Origin
+2024-05-24 22:03:25 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:25 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:25 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:03:25 DEBUG header: Date: Fri, 24 May 2024 15:03:25 GMT
+2024-05-24 22:03:25 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:25 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:25 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:35 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:35 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:03:36 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:36 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:36 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:36 DEBUG header: Vary: Origin
+2024-05-24 22:03:36 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:36 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:36 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:03:36 DEBUG header: Date: Fri, 24 May 2024 15:03:36 GMT
+2024-05-24 22:03:36 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:36 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:36 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:38 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/qx3trcnu/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2656\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:38 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.3502850532531738, \\"train/epoch\\": 1.1968503937007875, \\"train/example_ct\\": 4843, \\"_timestamp\\": 1716563007.1105647, \\"_runtime\\": 4197.929177761078, \\"_step\\": 151, \\"val/val_loss\\": 1.3647711277008057, \\"val/val_accuracy\\": 0.7049504950495049}"]}, "wandb-history.jsonl": {"offset": 151, "content": ["{\\"train/train_loss\\": 1.3502850532531738, \\"train/epoch\\": 1.1968503937007875, \\"train/example_ct\\": 4843, \\"_timestamp\\": 1716563007.1105647, \\"_runtime\\": 4197.929177761078, \\"_step\\": 151}", "{\\"train/train_loss\\": 1.4152976274490356, \\"train/epoch\\": 1.204724409448819, \\"train/example_ct\\": 4875, \\"_timestamp\\": 1716563018.151893, \\"_runtime\\": 4208.970505952835, \\"_step\\": 152}"]}, "wandb-events.jsonl": {"offset": 138, "content": ["{\\"system.cpu\\": 5.97, \\"system.cpu.0.cpu_percent\\": 21.53, \\"system.cpu.1.cpu_percent\\": 19.8, \\"system.cpu.2.cpu_percent\\": 27.45, \\"system.cpu.3.cpu_percent\\": 27.44, \\"system.cpu.4.cpu_percent\\": 32.06, \\"system.cpu.5.cpu_percent\\": 29.01, \\"system.cpu.6.cpu_percent\\": 41.33, \\"system.cpu.7.cpu_percent\\": 37.48, \\"system.cpu.8.cpu_percent\\": 64.31, \\"system.cpu.9.cpu_percent\\": 40.92, \\"system.cpu.10.cpu_percent\\": 55.17, \\"system.cpu.11.cpu_percent\\": 54.55, \\"system.cpu.12.cpu_percent\\": 60.96, \\"system.cpu.13.cpu_percent\\": 67.35, \\"system.cpu.14.cpu_percent\\": 59.77, \\"system.cpu.15.cpu_percent\\": 61.99, \\"system.cpu.16.cpu_percent\\": 65.93, \\"system.cpu.17.cpu_percent\\": 65.57, \\"system.cpu.18.cpu_percent\\": 66.69, \\"system.cpu.19.cpu_percent\\": 68.89, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 46375974.87, \\"system.network.recv\\": 53679560.8, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.process.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.process.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 51.13, \\"system.gpu.process.0.temp\\": 51.13, \\"system.gpu.0.powerWatts\\": 6.72, \\"system.gpu.process.0.powerWatts\\": 6.72, \\"system.gpu.0.powerPercent\\": 19.2, \\"system.gpu.process.0.powerPercent\\": 19.2, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 19108.3, \\"system.disk.out\\": 4744.47, \\"system.proc.memory.availableMB\\": 1223.19, \\"system.memory\\": 92.41, \\"system.proc.memory.rssMB\\": 610.07, \\"system.proc.memory.percent\\": 3.79, \\"_wandb\\": true, \\"_timestamp\\": 1716563013.479069, \\"_runtime\\": 4204.297682}"]}}, "dropped": 0}'
+2024-05-24 22:03:39 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:39 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:39 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:03:39 DEBUG header: Ratelimit-Remaining: 990
+2024-05-24 22:03:39 DEBUG header: Ratelimit-Reset: 22
+2024-05-24 22:03:39 DEBUG header: Vary: Origin
+2024-05-24 22:03:39 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:03:39 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:03:39 DEBUG header: Date: Fri, 24 May 2024 15:03:38 GMT
+2024-05-24 22:03:39 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:39 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:39 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:40 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:40 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:03:40 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:40 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:40 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:40 DEBUG header: Vary: Origin
+2024-05-24 22:03:40 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:40 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:40 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:03:40 DEBUG header: Date: Fri, 24 May 2024 15:03:40 GMT
+2024-05-24 22:03:40 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:40 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:40 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:50 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:50 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:03:51 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:51 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:51 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:51 DEBUG header: Vary: Origin
+2024-05-24 22:03:51 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:51 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:51 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:03:51 DEBUG header: Date: Fri, 24 May 2024 15:03:51 GMT
+2024-05-24 22:03:51 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:51 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:51 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:51 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/r7p6z3bi/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2810\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:51 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.303102970123291, \\"train/epoch\\": 1.90625, \\"train/example_ct\\": 3877, \\"_timestamp\\": 1716563030.848206, \\"_runtime\\": 3360.5117349624634, \\"_step\\": 121, \\"val/val_loss\\": 1.546363353729248, \\"val/val_accuracy\\": 0.5079365079365079}"]}, "wandb-history.jsonl": {"offset": 119, "content": ["{\\"train/train_loss\\": 1.4246973991394043, \\"train/epoch\\": 1.875, \\"train/example_ct\\": 3813, \\"_timestamp\\": 1716563009.0559118, \\"_runtime\\": 3338.7194406986237, \\"_step\\": 119}", "{\\"train/train_loss\\": 1.4534416198730469, \\"train/epoch\\": 1.890625, \\"train/example_ct\\": 3845, \\"_timestamp\\": 1716563018.5604928, \\"_runtime\\": 3348.2240216732025, \\"_step\\": 120}", "{\\"train/train_loss\\": 1.303102970123291, \\"train/epoch\\": 1.90625, \\"train/example_ct\\": 3877, \\"_timestamp\\": 1716563030.848206, \\"_runtime\\": 3360.5117349624634, \\"_step\\": 121}"]}, "wandb-events.jsonl": {"offset": 109, "content": ["{\\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 16636.22, \\"system.disk.out\\": 4289.41, \\"system.network.sent\\": 29511840.53, \\"system.network.recv\\": 31123059.2, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.process.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.process.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 51.13, \\"system.gpu.process.0.temp\\": 51.13, \\"system.gpu.0.powerWatts\\": 6.08, \\"system.gpu.process.0.powerWatts\\": 6.08, \\"system.gpu.0.powerPercent\\": 17.36, \\"system.gpu.process.0.powerPercent\\": 17.36, \\"system.cpu\\": 17.63, \\"system.cpu.0.cpu_percent\\": 17.44, \\"system.cpu.1.cpu_percent\\": 15.99, \\"system.cpu.2.cpu_percent\\": 25.73, \\"system.cpu.3.cpu_percent\\": 24.3, \\"system.cpu.4.cpu_percent\\": 31.71, \\"system.cpu.5.cpu_percent\\": 28.29, \\"system.cpu.6.cpu_percent\\": 42.08, \\"system.cpu.7.cpu_percent\\": 37.4, \\"system.cpu.8.cpu_percent\\": 64.48, \\"system.cpu.9.cpu_percent\\": 42.67, \\"system.cpu.10.cpu_percent\\": 56.71, \\"system.cpu.11.cpu_percent\\": 55.66, \\"system.cpu.12.cpu_percent\\": 62.79, \\"system.cpu.13.cpu_percent\\": 68.89, \\"system.cpu.14.cpu_percent\\": 60.86, \\"system.cpu.15.cpu_percent\\": 63.86, \\"system.cpu.16.cpu_percent\\": 67.43, \\"system.cpu.17.cpu_percent\\": 67.45, \\"system.cpu.18.cpu_percent\\": 65.91, \\"system.cpu.19.cpu_percent\\": 69.31, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1249.73, \\"system.memory\\": 92.26, \\"system.proc.memory.rssMB\\": 473.05, \\"system.proc.memory.percent\\": 2.94, \\"_wandb\\": true, \\"_timestamp\\": 1716563005.083041, \\"_runtime\\": 3334.74657}"]}}, "dropped": 0}'
+2024-05-24 22:03:51 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:51 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:51 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:03:51 DEBUG header: Ratelimit-Remaining: 986
+2024-05-24 22:03:51 DEBUG header: Ratelimit-Reset: 9
+2024-05-24 22:03:51 DEBUG header: Vary: Origin
+2024-05-24 22:03:51 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:03:51 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:03:51 DEBUG header: Date: Fri, 24 May 2024 15:03:51 GMT
+2024-05-24 22:03:51 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:51 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:51 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:03:55 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:03:55 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:03:56 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:03:56 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:03:56 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:03:56 DEBUG header: Vary: Origin
+2024-05-24 22:03:56 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:03:56 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:03:56 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:03:56 DEBUG header: Date: Fri, 24 May 2024 15:03:56 GMT
+2024-05-24 22:03:56 DEBUG header: Via: 1.1 google
+2024-05-24 22:03:56 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:03:56 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:05 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:05 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:04:06 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:06 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:06 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:04:06 DEBUG header: Vary: Origin
+2024-05-24 22:04:06 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:04:06 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:04:06 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:04:06 DEBUG header: Date: Fri, 24 May 2024 15:04:06 GMT
+2024-05-24 22:04:06 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:06 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:06 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:10 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:10 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:04:10 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:10 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:10 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:04:10 DEBUG header: Vary: Origin
+2024-05-24 22:04:10 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:04:10 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:04:10 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:04:10 DEBUG header: Date: Fri, 24 May 2024 15:04:10 GMT
+2024-05-24 22:04:10 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:10 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:10 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:20 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:20 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:04:21 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:21 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:21 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:04:21 DEBUG header: Vary: Origin
+2024-05-24 22:04:21 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:04:21 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:04:21 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:04:21 DEBUG header: Date: Fri, 24 May 2024 15:04:21 GMT
+2024-05-24 22:04:21 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:21 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:21 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:25 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/r7p6z3bi/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 4265\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:25 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.455728530883789, \\"train/epoch\\": 1.921875, \\"train/example_ct\\": 3909, \\"_timestamp\\": 1716563051.7948325, \\"_runtime\\": 3381.458361387253, \\"_step\\": 122, \\"val/val_loss\\": 1.546363353729248, \\"val/val_accuracy\\": 0.5079365079365079}"]}, "wandb-history.jsonl": {"offset": 122, "content": ["{\\"train/train_loss\\": 1.455728530883789, \\"train/epoch\\": 1.921875, \\"train/example_ct\\": 3909, \\"_timestamp\\": 1716563051.7948325, \\"_runtime\\": 3381.458361387253, \\"_step\\": 122}"]}, "wandb-events.jsonl": {"offset": 110, "content": ["{\\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 16755.75, \\"system.disk.out\\": 4318.05, \\"system.network.sent\\": 29801039.8, \\"system.network.recv\\": 31861624.53, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 5.27, \\"system.gpu.process.0.memory\\": 5.27, \\"system.gpu.0.gpu\\": 6.47, \\"system.gpu.process.0.gpu\\": 6.47, \\"system.gpu.0.temp\\": 51.27, \\"system.gpu.process.0.temp\\": 51.27, \\"system.gpu.0.powerWatts\\": 6.14, \\"system.gpu.process.0.powerWatts\\": 6.14, \\"system.gpu.0.powerPercent\\": 17.55, \\"system.gpu.process.0.powerPercent\\": 17.55, \\"system.cpu\\": 21.15, \\"system.cpu.0.cpu_percent\\": 25.34, \\"system.cpu.1.cpu_percent\\": 32.45, \\"system.cpu.2.cpu_percent\\": 34.72, \\"system.cpu.3.cpu_percent\\": 34.91, \\"system.cpu.4.cpu_percent\\": 36.17, \\"system.cpu.5.cpu_percent\\": 40.05, \\"system.cpu.6.cpu_percent\\": 41.14, \\"system.cpu.7.cpu_percent\\": 33.75, \\"system.cpu.8.cpu_percent\\": 67.64, \\"system.cpu.9.cpu_percent\\": 45.71, \\"system.cpu.10.cpu_percent\\": 48.11, \\"system.cpu.11.cpu_percent\\": 51.94, \\"system.cpu.12.cpu_percent\\": 51.62, \\"system.cpu.13.cpu_percent\\": 55.51, \\"system.cpu.14.cpu_percent\\": 50.13, \\"system.cpu.15.cpu_percent\\": 51.77, \\"system.cpu.16.cpu_percent\\": 58.16, \\"system.cpu.17.cpu_percent\\": 58.97, \\"system.cpu.18.cpu_percent\\": 68.33, \\"system.cpu.19.cpu_percent\\": 73.83, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1191.19, \\"system.memory\\": 92.67, \\"system.proc.memory.rssMB\\": 483.29, \\"system.proc.memory.percent\\": 3.0, \\"_wandb\\": true, \\"_timestamp\\": 1716563035.386874, \\"_runtime\\": 3365.050403}", "{\\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 16926.76, \\"system.disk.out\\": 4342.37, \\"system.network.sent\\": 29979827.53, \\"system.network.recv\\": 32309648.0, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 3.67, \\"system.gpu.process.0.memory\\": 3.67, \\"system.gpu.0.gpu\\": 4.67, \\"system.gpu.process.0.gpu\\": 4.67, \\"system.gpu.0.temp\\": 54.27, \\"system.gpu.process.0.temp\\": 54.27, \\"system.gpu.0.powerWatts\\": 8.77, \\"system.gpu.process.0.powerWatts\\": 8.77, \\"system.gpu.0.powerPercent\\": 25.06, \\"system.gpu.process.0.powerPercent\\": 25.06, \\"system.cpu\\": 19.91, \\"system.cpu.0.cpu_percent\\": 21.72, \\"system.cpu.1.cpu_percent\\": 19.02, \\"system.cpu.2.cpu_percent\\": 22.04, \\"system.cpu.3.cpu_percent\\": 24.75, \\"system.cpu.4.cpu_percent\\": 28.63, \\"system.cpu.5.cpu_percent\\": 27.77, \\"system.cpu.6.cpu_percent\\": 39.78, \\"system.cpu.7.cpu_percent\\": 33.38, \\"system.cpu.8.cpu_percent\\": 70.45, \\"system.cpu.9.cpu_percent\\": 42.91, \\"system.cpu.10.cpu_percent\\": 57.7, \\"system.cpu.11.cpu_percent\\": 58.61, \\"system.cpu.12.cpu_percent\\": 62.58, \\"system.cpu.13.cpu_percent\\": 67.63, \\"system.cpu.14.cpu_percent\\": 63.92, \\"system.cpu.15.cpu_percent\\": 64.67, \\"system.cpu.16.cpu_percent\\": 69.55, \\"system.cpu.17.cpu_percent\\": 69.96, \\"system.cpu.18.cpu_percent\\": 71.47, \\"system.cpu.19.cpu_percent\\": 79.45, \\"system.proc.cpu.threads\\": 50, \\"system.proc.memory.availableMB\\": 1601.52, \\"system.memory\\": 90.03, \\"system.proc.memory.rssMB\\": 405.84, \\"system.proc.memory.percent\\": 2.52, \\"_wandb\\": true, \\"_timestamp\\": 1716563065.401748, \\"_runtime\\": 3395.065277}"]}}, "dropped": 0}'
+2024-05-24 22:04:25 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:25 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:04:25 DEBUG send: b'POST /files/hasnanmr/trashnet-classification/qx3trcnu/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2660\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:25 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"train/train_loss\\": 1.3874008655548096, \\"train/epoch\\": 1.2125984251968505, \\"train/example_ct\\": 4907, \\"_timestamp\\": 1716563038.0479517, \\"_runtime\\": 4228.866564750671, \\"_step\\": 153, \\"val/val_loss\\": 1.3647711277008057, \\"val/val_accuracy\\": 0.7049504950495049}"]}, "wandb-history.jsonl": {"offset": 153, "content": ["{\\"train/train_loss\\": 1.3874008655548096, \\"train/epoch\\": 1.2125984251968505, \\"train/example_ct\\": 4907, \\"_timestamp\\": 1716563038.0479517, \\"_runtime\\": 4228.866564750671, \\"_step\\": 153}", "{\\"train/train_loss\\": 1.3571341037750244, \\"train/epoch\\": 1.220472440944882, \\"train/example_ct\\": 4939, \\"_timestamp\\": 1716563065.1612039, \\"_runtime\\": 4255.979816913605, \\"_step\\": 154}"]}, "wandb-events.jsonl": {"offset": 139, "content": ["{\\"system.cpu\\": 7.32, \\"system.cpu.0.cpu_percent\\": 23.52, \\"system.cpu.1.cpu_percent\\": 30.24, \\"system.cpu.2.cpu_percent\\": 34.04, \\"system.cpu.3.cpu_percent\\": 33.4, \\"system.cpu.4.cpu_percent\\": 36.27, \\"system.cpu.5.cpu_percent\\": 39.19, \\"system.cpu.6.cpu_percent\\": 41.87, \\"system.cpu.7.cpu_percent\\": 35.43, \\"system.cpu.8.cpu_percent\\": 68.09, \\"system.cpu.9.cpu_percent\\": 48.33, \\"system.cpu.10.cpu_percent\\": 51.03, \\"system.cpu.11.cpu_percent\\": 53.99, \\"system.cpu.12.cpu_percent\\": 54.81, \\"system.cpu.13.cpu_percent\\": 58.9, \\"system.cpu.14.cpu_percent\\": 53.58, \\"system.cpu.15.cpu_percent\\": 55.53, \\"system.cpu.16.cpu_percent\\": 61.42, \\"system.cpu.17.cpu_percent\\": 62.02, \\"system.cpu.18.cpu_percent\\": 67.54, \\"system.cpu.19.cpu_percent\\": 73.19, \\"system.proc.cpu.threads\\": 40, \\"system.network.sent\\": 46587092.4, \\"system.network.recv\\": 54348852.67, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.41, \\"system.disk.in\\": 19267.03, \\"system.disk.out\\": 4771.8, \\"system.gpu.0.memoryAllocated\\": 28.96, \\"system.gpu.process.0.memoryAllocated\\": 28.96, \\"system.gpu.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.process.0.memoryAllocatedBytes\\": 1864564736.0, \\"system.gpu.0.memory\\": 8.87, \\"system.gpu.process.0.memory\\": 8.87, \\"system.gpu.0.gpu\\": 11.4, \\"system.gpu.process.0.gpu\\": 11.4, \\"system.gpu.0.temp\\": 53.13, \\"system.gpu.process.0.temp\\": 53.13, \\"system.gpu.0.powerWatts\\": 7.37, \\"system.gpu.process.0.powerWatts\\": 7.37, \\"system.gpu.0.powerPercent\\": 21.06, \\"system.gpu.process.0.powerPercent\\": 21.06, \\"system.proc.memory.availableMB\\": 1251.7, \\"system.memory\\": 92.25, \\"system.proc.memory.rssMB\\": 605.75, \\"system.proc.memory.percent\\": 3.76, \\"_wandb\\": true, \\"_timestamp\\": 1716563043.486307, \\"_runtime\\": 4234.30492}"]}}, "dropped": 0}'
+2024-05-24 22:04:25 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:25 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:25 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:04:25 DEBUG header: Ratelimit-Remaining: 996
+2024-05-24 22:04:25 DEBUG header: Ratelimit-Reset: 35
+2024-05-24 22:04:25 DEBUG header: Vary: Origin
+2024-05-24 22:04:25 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:04:25 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-24 22:04:25 DEBUG header: Date: Fri, 24 May 2024 15:04:25 GMT
+2024-05-24 22:04:25 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:25 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:25 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:25 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:25 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:25 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:04:25 DEBUG header: Vary: Origin
+2024-05-24 22:04:25 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:04:25 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:04:25 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:04:25 DEBUG header: Date: Fri, 24 May 2024 15:04:25 GMT
+2024-05-24 22:04:25 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:25 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:25 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:26 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:26 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:26 DEBUG header: Ratelimit-Limit: 1000
+2024-05-24 22:04:26 DEBUG header: Ratelimit-Remaining: 993
+2024-05-24 22:04:26 DEBUG header: Ratelimit-Reset: 35
+2024-05-24 22:04:26 DEBUG header: Vary: Origin
+2024-05-24 22:04:26 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-24 22:04:26 DEBUG header: X-Ratelimit-Remaining: 73
+2024-05-24 22:04:26 DEBUG header: Date: Fri, 24 May 2024 15:04:25 GMT
+2024-05-24 22:04:26 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:26 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:26 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:35 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:35 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:04:36 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:36 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:36 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:04:36 DEBUG header: Vary: Origin
+2024-05-24 22:04:36 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:04:36 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:04:36 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:04:36 DEBUG header: Date: Fri, 24 May 2024 15:04:36 GMT
+2024-05-24 22:04:36 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:36 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:36 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:40 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:40 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "r7p6z3bi"}}'
+2024-05-24 22:04:40 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:40 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:40 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:04:40 DEBUG header: Vary: Origin
+2024-05-24 22:04:40 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:04:40 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:04:40 DEBUG header: X-Ratelimit-Remaining: 748
+2024-05-24 22:04:40 DEBUG header: Date: Fri, 24 May 2024 15:04:40 GMT
+2024-05-24 22:04:40 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:40 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:40 DEBUG header: Transfer-Encoding: chunked
+2024-05-24 22:04:50 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 22:04:50 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "qx3trcnu"}}'
+2024-05-24 22:04:51 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 22:04:51 DEBUG header: Content-Encoding: gzip
+2024-05-24 22:04:51 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-24 22:04:51 DEBUG header: Vary: Origin
+2024-05-24 22:04:51 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-24 22:04:51 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-24 22:04:51 DEBUG header: X-Ratelimit-Remaining: 749
+2024-05-24 22:04:51 DEBUG header: Date: Fri, 24 May 2024 15:04:51 GMT
+2024-05-24 22:04:51 DEBUG header: Via: 1.1 google
+2024-05-24 22:04:51 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 22:04:51 DEBUG header: Transfer-Encoding: chunked

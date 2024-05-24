@@ -4917,3 +4917,428 @@
 2024-05-24 22:00:25,160 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
 2024-05-24 22:00:25,160 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
 2024-05-24 22:00:25,914 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:26,915 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:27,530 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:00:27,920 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:28,921 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:29,922 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:30,923 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:31,923 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:32,566 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:00:32,925 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:33,925 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:34,927 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:35,928 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:36,766 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:00:36,768 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:00:36,768 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:00:36,772 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:00:36,773 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:00:36,929 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:37,780 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:00:37,929 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:38,930 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:39,931 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:40,180 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:00:40,180 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:00:40,932 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:41,933 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:42,934 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:43,504 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:00:43,935 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:44,936 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:45,937 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:46,938 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:47,955 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:48,546 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:00:48,974 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:49,996 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:51,016 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:52,018 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:53,037 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:53,588 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:00:54,081 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:54,483 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:00:54,485 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:00:54,486 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:00:54,487 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:00:54,848 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:00:55,116 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:55,116 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:00:55,180 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:00:55,180 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:00:56,124 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:57,126 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:58,127 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:59,128 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:00:59,577 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:00,129 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:01,130 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:02,131 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:03,132 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:04,133 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:04,648 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:05,135 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:06,136 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:07,137 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:08,138 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:09,139 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:09,707 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:10,141 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:10,199 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:01:10,201 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:01:11,143 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:12,146 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:13,152 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:14,226 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:15,228 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:15,550 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:16,229 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:16,821 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:01:16,824 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:01:16,825 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:01:16,829 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:01:17,230 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:17,552 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:01:18,231 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:19,233 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:20,241 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:20,889 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:21,243 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:22,245 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:23,246 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:24,248 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:24,874 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:01:25,199 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:01:25,200 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:01:25,248 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:26,249 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:26,539 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:27,251 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:28,252 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:29,253 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:30,254 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:31,255 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:31,583 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:32,256 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:33,257 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:34,258 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:35,259 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:36,260 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:36,652 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:37,261 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:38,427 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:39,144 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:01:39,148 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:01:39,149 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:01:39,151 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:01:39,174 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:01:39,428 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:40,216 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:01:40,217 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:01:40,479 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:41,487 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:42,493 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:42,561 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:43,494 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:44,495 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:45,496 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:46,497 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:47,497 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:47,617 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:48,498 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:49,502 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:50,647 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:51,652 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:52,653 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:52,664 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:53,688 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:54,689 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:54,896 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:01:55,231 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:01:55,233 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:01:55,691 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:56,692 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:57,693 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:58,562 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:01:58,733 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:01:59,776 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:00,280 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:02:00,281 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:02:00,282 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:02:00,283 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:02:00,804 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:00,815 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:02:01,805 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:02,806 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:03,824 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:04,326 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:04,846 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:05,876 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:06,877 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:07,878 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:08,880 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:09,383 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:09,882 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:10,249 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:02:10,250 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:02:10,883 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:11,884 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:12,885 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:13,886 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:14,606 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:14,887 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:15,888 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:16,889 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:17,890 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:18,892 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:19,648 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:19,717 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:02:19,719 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:02:19,719 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:02:19,720 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:02:19,893 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:20,291 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:02:20,894 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:21,895 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:22,896 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:23,897 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:25,068 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:02:25,070 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:25,149 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:25,265 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:02:25,267 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:02:26,150 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:27,151 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:28,160 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:29,161 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:30,161 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:30,609 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:31,162 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:32,164 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:33,164 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:34,165 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:35,166 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:35,691 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:36,167 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:37,169 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:38,170 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:39,171 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:40,172 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:40,267 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:02:40,269 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:02:41,173 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:41,639 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:42,174 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:42,906 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:02:42,908 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:02:42,909 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:02:42,909 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:02:43,175 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:43,938 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:02:44,176 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:45,177 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:46,178 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:47,000 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:47,180 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:48,181 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:49,182 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:50,183 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:51,184 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:52,080 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:52,197 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:53,198 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:54,199 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:55,069 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:02:55,200 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:55,272 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:02:55,275 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:02:56,201 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:57,202 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:57,709 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:02:58,204 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:02:59,204 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:00,223 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:01,328 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:02,332 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:02,847 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:03,337 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:04,454 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:05,472 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:06,496 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:07,526 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:07,887 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:08,527 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:08,862 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:03:08,866 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:03:08,867 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:03:08,873 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:03:09,411 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:03:09,528 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:10,278 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:03:10,280 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:03:10,759 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:11,763 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:12,794 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:13,724 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:13,870 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:14,893 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:15,894 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:16,895 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:17,898 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:18,746 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:18,899 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:19,900 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:20,902 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:21,916 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:22,918 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:23,815 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:23,919 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:24,920 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:25,095 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:03:25,287 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:03:25,289 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:03:25,921 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:26,922 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:27,923 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:28,923 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:29,130 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:03:29,132 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:03:29,132 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:03:29,132 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:29,133 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:03:29,924 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:30,115 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:03:30,925 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:31,925 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:32,926 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:33,926 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:34,177 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:34,927 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:35,927 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:36,928 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:37,929 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:38,798 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:03:38,800 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:03:38,800 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:03:38,800 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:03:38,929 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:39,239 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:03:39,816 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:39,930 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:40,284 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:03:40,284 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:03:40,930 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:41,930 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:42,931 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:43,931 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:44,931 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:45,632 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:45,932 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:46,933 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:47,934 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:48,935 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:49,936 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:50,663 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:50,938 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:51,293 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:03:51,293 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:03:51,293 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:03:51,293 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:03:51,435 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:03:51,939 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:52,940 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:53,941 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:55,645 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:55,886 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:03:55,900 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:03:55,901 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:03:55,911 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:03:56,674 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:57,703 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:58,705 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:03:59,706 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:00,707 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:01,326 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:01,708 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:02,719 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:03,720 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:04,721 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:05,722 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:06,463 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:06,729 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:07,730 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:08,748 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:09,749 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:10,404 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:04:10,406 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:04:10,750 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:11,751 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:11,778 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:12,308 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:04:12,312 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:04:12,313 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:04:12,314 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:04:12,676 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:04:12,752 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:13,753 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:14,754 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:15,969 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:16,970 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:17,415 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:17,971 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:18,972 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:19,980 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:20,990 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:21,991 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:22,460 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:22,992 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:23,993 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:24,993 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:25,401 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 22:04:25,447 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:04:25,448 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:04:25,994 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:27,030 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:27,827 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:28,035 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:29,036 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:30,037 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:30,572 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:04:30,574 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:04:30,574 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:04:30,575 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:04:31,039 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:31,147 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:04:32,039 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:33,040 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:33,608 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:34,041 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:35,042 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:36,043 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:37,044 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:38,045 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:38,638 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:39,051 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:40,053 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:40,437 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 22:04:40,437 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 22:04:41,062 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:42,077 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:43,077 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:43,815 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:44,078 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:45,079 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:46,069 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-24 22:04:46,069 DEBUG   SenderThread:3608 [sender.py:send():378] send: history
+2024-05-24 22:04:46,069 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: summary_record
+2024-05-24 22:04:46,069 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 22:04:46,080 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:46,334 INFO    Thread-30 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\files\wandb-summary.json
+2024-05-24 22:04:47,081 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:48,083 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:49,085 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:49,114 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 22:04:50,094 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:51,095 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 22:04:52,096 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
