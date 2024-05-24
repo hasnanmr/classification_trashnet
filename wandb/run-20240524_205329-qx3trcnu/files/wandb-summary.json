@@ -1,1 +1,1 @@
-{"train/train_loss": 1.3426051139831543, "train/epoch": 1.1338582677165354, "train/example_ct": 4587, "_timestamp": 1716562814.0584626, "_runtime": 4004.8770756721497, "_step": 143, "val/val_loss": 1.3647711277008057, "val/val_accuracy": 0.7049504950495049}
+{"train/train_loss": 1.4421913623809814, "train/epoch": 1.2283464566929134, "train/example_ct": 4971, "_timestamp": 1716563090.2168994, "_runtime": 4281.035512447357, "_step": 155, "val/val_loss": 1.3647711277008057, "val/val_accuracy": 0.7049504950495049}
