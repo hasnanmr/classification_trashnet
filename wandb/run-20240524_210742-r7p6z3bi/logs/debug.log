@@ -1,0 +1,22 @@
+2024-05-24 21:07:42,202 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-24 21:07:42,203 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Configure stats pid to 22316
+2024-05-24 21:07:42,203 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Hasnan Ramadhan\.config\wandb\settings
+2024-05-24 21:07:42,203 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Loading settings from d:\classification_test\wandb\settings
+2024-05-24 21:07:42,205 WARNING MainThread:22316 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_DEBUG
+2024-05-24 21:07:42,205 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_graphql_timeout_seconds': '300', 'init_timeout': '600'}
+2024-05-24 21:07:42,207 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-24 21:07:42,207 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-24 21:07:42,207 INFO    MainThread:22316 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-24 21:07:42,209 INFO    MainThread:22316 [wandb_init.py:_log_setup():520] Logging user logs to d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\logs\debug.log
+2024-05-24 21:07:42,211 INFO    MainThread:22316 [wandb_init.py:_log_setup():521] Logging internal logs to d:\classification_test\wandb\run-20240524_210742-r7p6z3bi\logs\debug-internal.log
+2024-05-24 21:07:42,213 INFO    MainThread:22316 [wandb_init.py:init():560] calling init triggers
+2024-05-24 21:07:42,213 INFO    MainThread:22316 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {'epochs': 15, 'batch_size': 32, 'lr': 0.0001}
+2024-05-24 21:07:42,214 INFO    MainThread:22316 [wandb_init.py:init():585] re-initializing run, found existing run on stack: 3tv27o8t
+2024-05-24 21:07:42,222 INFO    MainThread:22316 [wandb_run.py:_finish():2103] finishing run hasnanmr/trashnet-classification/3tv27o8t
+2024-05-24 21:07:42,228 ERROR   MainThread:22316 [jupyter.py:save_history():437] Run pip install nbformat to save notebook history
+2024-05-24 21:07:42,229 INFO    MainThread:22316 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-24 21:07:42,229 INFO    MainThread:22316 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-05-24 21:07:42,229 INFO    MainThread:22316 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-24 21:07:42,230 INFO    MainThread:22316 [wandb_run.py:_restore():2326] restore
+2024-05-24 21:07:42,231 INFO    MainThread:22316 [wandb_run.py:_restore():2332] restore done

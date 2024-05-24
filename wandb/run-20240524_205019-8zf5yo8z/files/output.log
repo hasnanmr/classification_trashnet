@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "D:\classification_test\train.py", line 144, in <module>
+    for step, (images, labels) in enumerate(train_dl):
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataset.py", line 419, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataset.py", line 419, in <listcomp>
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\train.py", line 29, in __getitem__
+    image = Image.fromarray(image_data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\PIL\Image.py", line 3154, in fromarray
+    return frombuffer(mode, size, obj, "raw", rawmode, 0, 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\PIL\Image.py", line 3069, in frombuffer
+    return frombytes(mode, size, data, decoder_name, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\PIL\Image.py", line 3012, in frombytes
+    im.frombytes(data, decoder_name, args)
+  File "D:\classification_test\.venv\Lib\site-packages\PIL\Image.py", line 826, in frombytes
+    s = d.decode(data)
+        ^^^^^^^^^^^^^^
+TypeError: a bytes-like object is required, not 'JpegImageFile'

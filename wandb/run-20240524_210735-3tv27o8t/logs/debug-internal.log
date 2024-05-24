@@ -1,0 +1,546 @@
+2024-05-24 21:07:35,292 INFO    StreamThr :3608 [internal.py:wandb_internal():85] W&B internal server running at pid: 3608, started at: 2024-05-24 21:07:35.290677
+2024-05-24 21:07:35,298 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status
+2024-05-24 21:07:35,304 INFO    WriterThread:3608 [datastore.py:open_for_write():87] open: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\run-3tv27o8t.wandb
+2024-05-24 21:07:35,304 DEBUG   SenderThread:3608 [sender.py:send():378] send: header
+2024-05-24 21:07:35,495 DEBUG   SenderThread:3608 [sender.py:send():378] send: run
+2024-05-24 21:07:37,206 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {}
+2024-05-24 21:07:37,208 INFO    SenderThread:3608 [dir_watcher.py:__init__():211] watching files in: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files
+2024-05-24 21:07:37,208 INFO    SenderThread:3608 [sender.py:_start_run_threads():1123] run started: 3tv27o8t with start time 1716559655.292674
+2024-05-24 21:07:37,233 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: check_version
+2024-05-24 21:07:37,236 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: check_version
+2024-05-24 21:07:38,211 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {}
+2024-05-24 21:07:38,903 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: run_start
+2024-05-24 21:07:39,057 DEBUG   HandlerThread:3608 [system_info.py:__init__():26] System info init
+2024-05-24 21:07:39,057 DEBUG   HandlerThread:3608 [system_info.py:__init__():41] System info init done
+2024-05-24 21:07:39,057 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:39,057 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:39,057 INFO    HandlerThread:3608 [system_monitor.py:probe():214] Collecting system info
+2024-05-24 21:07:39,094 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:39,094 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started disk monitoring
+2024-05-24 21:07:39,102 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started gpu monitoring
+2024-05-24 21:07:39,120 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started memory monitoring
+2024-05-24 21:07:39,208 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started network monitoring
+2024-05-24 21:07:39,208 DEBUG   HandlerThread:3608 [system_info.py:probe():150] Probing system
+2024-05-24 21:07:39,238 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {}
+2024-05-24 21:07:39,245 DEBUG   HandlerThread:3608 [system_info.py:_probe_git():135] Probing git
+2024-05-24 21:07:39,564 DEBUG   HandlerThread:3608 [system_info.py:_probe_git():143] Probing git done
+2024-05-24 21:07:39,564 DEBUG   HandlerThread:3608 [system_info.py:probe():198] Probing system done
+2024-05-24 21:07:39,565 DEBUG   HandlerThread:3608 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.7', 'heartbeatAt': '2024-05-24T14:07:39.239318', 'startedAt': '2024-05-24T14:07:35.263638', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/hasnanmr/classification_trashnet.git', 'commit': 'cea1a2232bb634cd198ad7a77f534a40dc0f042a'}, 'email': 'hasnan.mhr@gmail.com', 'root': 'D:/classification_test', 'host': 'HasnanRamadhan', 'username': 'Hasnan Ramadhan', 'executable': 'd:\\classification_test\\.venv\\Scripts\\python.exe', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2400.0, 'min': 0.0, 'max': 2400.0}, 'cpu_freq_per_core': [{'current': 2400.0, 'min': 0.0, 'max': 2400.0}], 'disk': {'/': {'total': 468.74999618530273, 'used': 144.39897537231445}}, 'gpu': 'NVIDIA GeForce RTX 4050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4050 Laptop GPU', 'memory_total': 6439305216}], 'memory': {'total': 15.731315612792969}}
+2024-05-24 21:07:39,565 INFO    HandlerThread:3608 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-24 21:07:39,565 INFO    HandlerThread:3608 [system_monitor.py:probe():227] Publishing system info
+2024-05-24 21:07:39,565 INFO    HandlerThread:3608 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-24 21:07:39,633 DEBUG   SenderThread:3608 [sender.py:send():378] send: files
+2024-05-24 21:07:39,633 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-24 21:07:40,202 DEBUG   wandb-upload_0:3608 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/wandb-metadata.json?Expires=1716646060&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=D1ubTggOYmmxjxc3WBPUvoSoj6tu3nySISEeLcQx3bYC9qumYUVeVRglnCg%2BuOd0uav0gLOLLVE%2BoBmShhnIp4u1k1VcSd8FsKm7pL%2BLDRZbqbrO0tt4ttVDCqFDQxOgOR%2BfCdLzbpoFngakLhOnu3wvfQFEk7wJx2oyOredxtQuzaZ%2Fjot1clyiAD9dr7r%2Br1cE8hY8nhHd97m%2Bg0z%2FMqglGQ7QLBvCpIypfWkd%2Bs0ttm%2B2JkCAfagINyQ5AIFmzaqr4D4kOJIGgg6xYQ7xRNBLF4ax7eCXRXpRUeV%2FPb9LJHARSpyuBHOerZoGv5lydku0O1UOEYo8B1OPkOmtXg%3D%3D
+2024-05-24 21:07:40,241 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=0, failed=False, artifact_file=False)}
+2024-05-24 21:07:40,267 INFO    Thread-16 :3608 [dir_watcher.py:_on_file_created():271] file/dir created: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\wandb-metadata.json
+2024-05-24 21:07:41,000 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-24 21:07:41,011 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: python_packages
+2024-05-24 21:07:41,015 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 21:07:41,161 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 21:07:41,162 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 21:07:41,189 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 316\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:41,211 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "trashnet-classification", "entityName": "hasnanmr", "runId": "3tv27o8t"}}'
+2024-05-24 21:07:41,257 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=0, failed=False, artifact_file=False)}
+2024-05-24 21:07:41,772 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:41,805 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:41,806 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:41,810 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Content-Type: application/json; charset=utf-8
+2024-05-24 21:07:41,820 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:41,819 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:41,820 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Content-Type-Options: nosniff
+2024-05-24 21:07:41,823 INFO    Thread-16 :3608 [dir_watcher.py:_on_file_created():271] file/dir created: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\requirements.txt
+2024-05-24 21:07:41,824 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:41,824 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 750
+2024-05-24 21:07:41,826 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:41,828 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 742
+2024-05-24 21:07:41,851 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:41 GMT
+2024-05-24 21:07:41,851 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:41,851 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] send: b'PUT /wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/wandb-metadata.json?Expires=1716646060&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=D1ubTggOYmmxjxc3WBPUvoSoj6tu3nySISEeLcQx3bYC9qumYUVeVRglnCg%2BuOd0uav0gLOLLVE%2BoBmShhnIp4u1k1VcSd8FsKm7pL%2BLDRZbqbrO0tt4ttVDCqFDQxOgOR%2BfCdLzbpoFngakLhOnu3wvfQFEk7wJx2oyOredxtQuzaZ%2Fjot1clyiAD9dr7r%2Br1cE8hY8nhHd97m%2Bg0z%2FMqglGQ7QLBvCpIypfWkd%2Bs0ttm%2B2JkCAfagINyQ5AIFmzaqr4D4kOJIGgg6xYQ7xRNBLF4ax7eCXRXpRUeV%2FPb9LJHARSpyuBHOerZoGv5lydku0O1UOEYo8B1OPkOmtXg%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 1413\r\n\r\n'
+2024-05-24 21:07:41,852 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:41,852 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:41,828 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-24 21:07:41,829 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:41,854 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] send: b'{\r\n    "os": "Windows-10-10.0.22631-SP0",\r\n    "python": "3.11.7",\r\n    "heartbeatAt": "2024-05-24T14:07:39.239318",\r\n    "startedAt": "2024-05-24T14:07:35.263638",\r\n    "docker": null,\r\n    "cuda": null,\r\n    "args": [],\r\n    "state": "running",\r\n    "program": "<python with no main file>",\r\n    "codePathLocal": null,\r\n    "git": {\r\n        "remote": "https://github.com/hasnanmr/classification_trashnet.git",\r\n        "commit": "cea1a2232bb634cd198ad7a77f534a40dc0f042a"\r\n    },\r\n    "email": "hasnan.mhr@gmail.com",\r\n    "root": "D:/classification_test",\r\n    "host": "HasnanRamadhan",\r\n    "username": "Hasnan Ramadhan",\r\n    "executable": "d:\\\\classification_test\\\\.venv\\\\Scripts\\\\python.exe",\r\n    "cpu_count": 14,\r\n    "cpu_count_logical": 20,\r\n    "cpu_freq": {\r\n        "current": 2400.0,\r\n        "min": 0.0,\r\n        "max": 2400.0\r\n    },\r\n    "cpu_freq_per_core": [\r\n        {\r\n            "current": 2400.0,\r\n            "min": 0.0,\r\n            "max": 2400.0\r\n        }\r\n    ],\r\n    "disk": {\r\n        "/": {\r\n            "total": 468.74999618530273,\r\n            "used": 144.39897537231445\r\n        }\r\n    },\r\n    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",\r\n    "gpu_count": 1,\r\n    "gpu_devices": [\r\n        {\r\n            "name": "NVIDIA GeForce RTX 4050 Laptop GPU",\r\n            "memory_total": 6439305216\r\n        }\r\n    ],\r\n    "memory": {\r\n        "total": 15.731315612792969\r\n    }\r\n}\r\n'
+2024-05-24 21:07:41,855 DEBUG   SenderThread:3608 [sender.py:send():378] send: telemetry
+2024-05-24 21:07:41,856 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined disk monitor
+2024-05-24 21:07:41,857 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,268 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 21:07:42,270 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:42,309 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: ETag: "296655cb20342f06268b94c6a2511e1b"
+2024-05-24 21:07:42,310 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-generation: 1716559662071107
+2024-05-24 21:07:42,310 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-metageneration: 1
+2024-05-24 21:07:42,311 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: crc32c=VFYJmg==
+2024-05-24 21:07:42,311 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: md5=KWZVyyA0LwYmi5TGolEeGw==
+2024-05-24 21:07:42,311 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-length: 1413
+2024-05-24 21:07:42,311 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-encoding: identity
+2024-05-24 21:07:42,332 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:42,333 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: X-GUploader-UploadID: ABPtcPrZv_XNZkmrDQ0rqrHbAEgQmqeH_c6LaD4dTIrBZKYRcIQAqRauFbfECXVsIwCwu7-NmkQ
+2024-05-24 21:07:42,333 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Content-Length: 0
+2024-05-24 21:07:42,333 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:42 GMT
+2024-05-24 21:07:42,333 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Server: UploadServer
+2024-05-24 21:07:42,333 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Content-Type: text/html; charset=UTF-8
+2024-05-24 21:07:42,333 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:42,334 DEBUG   wandb-upload_0:3608 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/wandb-metadata.json?Expires=1716646060&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=D1ubTggOYmmxjxc3WBPUvoSoj6tu3nySISEeLcQx3bYC9qumYUVeVRglnCg%2BuOd0uav0gLOLLVE%2BoBmShhnIp4u1k1VcSd8FsKm7pL%2BLDRZbqbrO0tt4ttVDCqFDQxOgOR%2BfCdLzbpoFngakLhOnu3wvfQFEk7wJx2oyOredxtQuzaZ%2Fjot1clyiAD9dr7r%2Br1cE8hY8nhHd97m%2Bg0z%2FMqglGQ7QLBvCpIypfWkd%2Bs0ttm%2B2JkCAfagINyQ5AIFmzaqr4D4kOJIGgg6xYQ7xRNBLF4ax7eCXRXpRUeV%2FPb9LJHARSpyuBHOerZoGv5lydku0O1UOEYo8B1OPkOmtXg%3D%3D complete
+2024-05-24 21:07:42,337 INFO    wandb-upload_0:3608 [upload_job.py:push():130] Uploaded file C:\Users\HASNAN~1\AppData\Local\Temp\tmpecw9aw8rwandb\pdcpuyj8-wandb-metadata.json
+2024-05-24 21:07:42,340 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined gpu monitor
+2024-05-24 21:07:42,340 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined memory monitor
+2024-05-24 21:07:42,340 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined network monitor
+2024-05-24 21:07:42,341 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,341 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,341 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,343 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,344 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,344 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,344 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,345 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish cpu monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,346 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,347 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,347 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,347 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,348 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,350 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,350 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,373 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,374 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,378 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,378 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,378 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish cpu monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,401 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,402 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,402 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,402 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,403 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,403 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,404 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,405 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,405 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,408 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,408 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,409 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish cpu monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,411 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,412 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,412 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,412 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,413 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,413 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,413 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,413 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,431 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,432 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,432 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,432 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish cpu monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,443 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,443 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,443 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,443 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,443 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,443 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,443 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,443 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,450 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,456 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,456 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,456 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish cpu monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,467 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,469 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,469 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,470 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,473 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,474 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,474 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,481 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,482 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,483 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,484 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,484 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish cpu monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,486 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,486 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,487 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,490 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,494 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,494 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,494 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,496 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,497 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,498 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,524 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,524 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,528 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-24 21:07:42,529 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined disk monitor
+2024-05-24 21:07:42,530 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started disk monitoring
+2024-05-24 21:07:42,531 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,531 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,532 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,534 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,542 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,542 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 21:07:42,547 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,562 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,564 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: pause
+2024-05-24 21:07:42,564 INFO    HandlerThread:3608 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-05-24 21:07:42,565 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,565 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish cpu monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,585 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,585 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,585 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,585 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,597 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: resume
+2024-05-24 21:07:42,597 INFO    HandlerThread:3608 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-05-24 21:07:42,598 INFO    HandlerThread:3608 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 21:07:42,601 INFO    SystemMonitor:3608 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 21:07:42,615 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 21:07:42,615 DEBUG   SenderThread:3608 [sender.py:send():378] send: telemetry
+2024-05-24 21:07:42,644 DEBUG   SenderThread:3608 [sender.py:send():378] send: telemetry
+2024-05-24 21:07:42,645 DEBUG   SenderThread:3608 [sender.py:send():378] send: exit
+2024-05-24 21:07:42,645 INFO    SenderThread:3608 [sender.py:send_exit():585] handling exit code: 0
+2024-05-24 21:07:42,646 INFO    SenderThread:3608 [sender.py:send_exit():587] handling runtime: 3
+2024-05-24 21:07:42,648 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 21:07:42,650 INFO    SenderThread:3608 [sender.py:send_exit():593] send defer
+2024-05-24 21:07:42,650 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 21:07:42,652 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 21:07:42,663 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:42,663 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-24 21:07:42,664 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:42,665 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-24 21:07:42,665 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 1
+2024-05-24 21:07:42,667 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:42,667 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-24 21:07:42,674 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:42,675 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-24 21:07:42,675 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 2
+2024-05-24 21:07:42,675 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:42,675 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-24 21:07:42,675 INFO    HandlerThread:3608 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 21:07:42,675 INFO    HandlerThread:3608 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-24 21:07:42,675 WARNING HandlerThread:3608 [interfaces.py:finish():205] Failed to finish disk monitoring: cannot join thread before it is started
+2024-05-24 21:07:42,707 INFO    SystemMonitor:3608 [interfaces.py:start():188] Started disk monitoring
+2024-05-24 21:07:42,707 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 21:07:42,707 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 21:07:42,708 DEBUG   SystemMonitor:3608 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 21:07:42,713 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:42,713 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-24 21:07:42,713 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 3
+2024-05-24 21:07:42,714 DEBUG   SenderThread:3608 [sender.py:send():378] send: stats
+2024-05-24 21:07:42,716 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:42,720 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-24 21:07:42,721 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:42,722 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-24 21:07:42,722 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 4
+2024-05-24 21:07:42,723 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:42,723 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-24 21:07:42,724 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:42,725 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-24 21:07:42,725 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 5
+2024-05-24 21:07:42,726 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:42,726 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-24 21:07:42,731 DEBUG   SenderThread:3608 [sender.py:send():378] send: summary
+2024-05-24 21:07:42,732 INFO    SenderThread:3608 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 21:07:42,734 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:42,734 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-24 21:07:42,734 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 6
+2024-05-24 21:07:42,736 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:42,737 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-24 21:07:42,740 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:42,740 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-24 21:07:42,749 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 21:07:42,755 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 1833\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:42,756 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] send: b'{"query": "mutation UpsertBucket($id: String, $name: String, $project: String, $entity: String, $groupName: String, $description: String, $displayName: String, $notes: String, $commit: String, $config: JSONString, $host: String, $debug: Boolean, $program: String, $repo: String, $jobType: String, $state: String, $sweep: String, $tags: [String!], $summaryMetrics: JSONString) {\\n  upsertBucket(input: {id: $id, name: $name, groupName: $groupName, modelName: $project, entityName: $entity, description: $description, displayName: $displayName, notes: $notes, config: $config, commit: $commit, host: $host, debug: $debug, jobProgram: $program, jobRepo: $repo, jobType: $jobType, state: $state, sweep: $sweep, tags: $tags, summaryMetrics: $summaryMetrics}) {\\n    bucket {\\n      id\\n      name\\n      displayName\\n      description\\n      config\\n      sweepName\\n      project {\\n        id\\n        name\\n        entity {\\n          id\\n          name\\n        }\\n      }\\n      historyLineCount\\n    }\\n    inserted\\n  }\\n}\\n", "variables": {"id": null, "entity": "hasnanmr", "name": "3tv27o8t", "project": "trashnet-classification", "groupName": null, "tags": null, "description": null, "config": "{\\"_wandb\\": {\\"desc\\": null, \\"value\\": {\\"python_version\\": \\"3.11.7\\", \\"cli_version\\": \\"0.17.0\\", \\"framework\\": \\"huggingface\\", \\"huggingface_version\\": \\"4.41.0\\", \\"is_jupyter_run\\": true, \\"is_kaggle_kernel\\": false, \\"start_time\\": 1716559655, \\"t\\": {\\"1\\": [1, 11, 41, 49, 55], \\"2\\": [1, 11, 41, 49, 55], \\"3\\": [2, 15, 16, 23], \\"4\\": \\"3.11.7\\", \\"5\\": \\"0.17.0\\", \\"6\\": \\"4.41.0\\", \\"8\\": [1, 3, 5], \\"13\\": \\"windows-amd64\\"}}}}", "commit": null, "displayName": null, "notes": null, "host": null, "debug": true, "repo": null, "program": null, "jobType": null, "state": null, "sweep": null, "summaryMetrics": null}}'
+2024-05-24 21:07:42,842 INFO    Thread-16 :3608 [dir_watcher.py:_on_file_created():271] file/dir created: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\wandb-summary.json
+2024-05-24 21:07:42,842 INFO    Thread-16 :3608 [dir_watcher.py:_on_file_created():271] file/dir created: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\output.log
+2024-05-24 21:07:43,033 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:43,035 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:43,035 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Content-Type: application/json; charset=utf-8
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Content-Type-Options: nosniff
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 750
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 741
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:42 GMT
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:43,036 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:43,048 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 7
+2024-05-24 21:07:43,049 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:43,049 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-24 21:07:43,050 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:43,050 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-24 21:07:43,239 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 21:07:43,321 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 21:07:43,892 INFO    Thread-16 :3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\config.yaml
+2024-05-24 21:07:44,323 INFO    FPStatsThread:3608 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 21:07:44,480 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 8
+2024-05-24 21:07:44,480 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 21:07:44,485 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:44,485 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-24 21:07:44,487 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:44,487 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-24 21:07:44,487 INFO    SenderThread:3608 [job_builder.py:build():432] Attempting to build job artifact
+2024-05-24 21:07:44,488 INFO    SenderThread:3608 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-05-24 21:07:44,488 INFO    SenderThread:3608 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-05-24 21:07:44,488 WARNING SenderThread:3608 [job_builder.py:_log_if_verbose():267] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-05-24 21:07:44,488 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 9
+2024-05-24 21:07:44,489 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:44,489 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-24 21:07:44,489 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:44,489 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-24 21:07:44,490 INFO    SenderThread:3608 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-24 21:07:44,501 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'POST /files/hasnanmr/trashnet-classification/3tv27o8t/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 1285\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:44,502 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'{"files": {"wandb-events.jsonl": {"offset": 0, "content": ["{\\"system.cpu\\": 0.39, \\"system.cpu.0.cpu_percent\\": 0.85, \\"system.cpu.1.cpu_percent\\": 0.85, \\"system.cpu.2.cpu_percent\\": 0.85, \\"system.cpu.3.cpu_percent\\": 0.0, \\"system.cpu.4.cpu_percent\\": 6.05, \\"system.cpu.5.cpu_percent\\": 0.0, \\"system.cpu.6.cpu_percent\\": 2.3, \\"system.cpu.7.cpu_percent\\": 0.85, \\"system.cpu.8.cpu_percent\\": 3.45, \\"system.cpu.9.cpu_percent\\": 1.75, \\"system.cpu.10.cpu_percent\\": 19.45, \\"system.cpu.11.cpu_percent\\": 19.35, \\"system.cpu.12.cpu_percent\\": 26.25, \\"system.cpu.13.cpu_percent\\": 41.25, \\"system.cpu.14.cpu_percent\\": 28.25, \\"system.cpu.15.cpu_percent\\": 28.2, \\"system.cpu.16.cpu_percent\\": 39.45, \\"system.cpu.17.cpu_percent\\": 37.9, \\"system.cpu.18.cpu_percent\\": 37.2, \\"system.cpu.19.cpu_percent\\": 37.5, \\"system.proc.cpu.threads\\": 39, \\"system.disk.\\\\\\\\.usagePercent\\": 30.8, \\"system.disk.\\\\\\\\.usageGB\\": 144.4, \\"system.disk.in\\": 3.27, \\"system.disk.out\\": 1.04, \\"system.proc.memory.availableMB\\": 471.92, \\"system.memory\\": 97.1, \\"system.proc.memory.rssMB\\": 542.57, \\"system.proc.memory.percent\\": 3.37, \\"system.network.sent\\": 8771.0, \\"system.network.recv\\": 4053.0, \\"_wandb\\": true, \\"_timestamp\\": 1716559661.912994, \\"_runtime\\": 6.62032}"]}}, "dropped": 0}'
+2024-05-24 21:07:44,779 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:44,780 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:44,780 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Limit: 1000
+2024-05-24 21:07:44,781 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Remaining: 990
+2024-05-24 21:07:44,781 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Reset: 16
+2024-05-24 21:07:44,781 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:44,782 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 75
+2024-05-24 21:07:44,782 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 73
+2024-05-24 21:07:44,782 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:44 GMT
+2024-05-24 21:07:44,782 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:44,783 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:44,783 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:44,791 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'POST /files/hasnanmr/trashnet-classification/3tv27o8t/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 87\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:44,792 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'{"complete": false, "failed": false, "dropped": 0, "uploaded": ["wandb-metadata.json"]}'
+2024-05-24 21:07:44,899 INFO    SenderThread:3608 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\output.log
+2024-05-24 21:07:44,901 INFO    SenderThread:3608 [dir_watcher.py:finish():388] scan: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files
+2024-05-24 21:07:44,902 INFO    SenderThread:3608 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\config.yaml config.yaml
+2024-05-24 21:07:44,904 INFO    SenderThread:3608 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\output.log output.log
+2024-05-24 21:07:44,912 INFO    SenderThread:3608 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\requirements.txt requirements.txt
+2024-05-24 21:07:44,914 INFO    SenderThread:3608 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\wandb-metadata.json wandb-metadata.json
+2024-05-24 21:07:44,915 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 422\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:44,916 INFO    SenderThread:3608 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\wandb-summary.json wandb-summary.json
+2024-05-24 21:07:44,924 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "trashnet-classification", "run": "3tv27o8t", "entity": "hasnanmr", "files": ["config.yaml"]}}'
+2024-05-24 21:07:44,933 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 10
+2024-05-24 21:07:44,934 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:44,935 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-24 21:07:44,937 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:44,942 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-24 21:07:44,944 INFO    SenderThread:3608 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-24 21:07:45,041 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:45,042 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:45,042 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Limit: 1000
+2024-05-24 21:07:45,042 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Remaining: 986
+2024-05-24 21:07:45,042 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Reset: 16
+2024-05-24 21:07:45,042 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:45,042 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 75
+2024-05-24 21:07:45,044 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 72
+2024-05-24 21:07:45,044 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:44 GMT
+2024-05-24 21:07:45,044 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:45,044 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:45,044 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:45,051 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'POST /files/hasnanmr/trashnet-classification/3tv27o8t/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2516\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:45,052 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"_wandb\\": {\\"runtime\\": 3}}"]}, "wandb-events.jsonl": {"offset": 1, "content": ["{\\"system.gpu.0.memoryAllocated\\": 16.21, \\"system.gpu.0.memoryAllocatedBytes\\": 1043955712.0, \\"system.gpu.0.memory\\": 0.0, \\"system.gpu.0.gpu\\": 0.0, \\"system.gpu.0.temp\\": 52.0, \\"system.gpu.0.powerWatts\\": 2.61, \\"system.gpu.0.powerPercent\\": 7.45, \\"_wandb\\": true, \\"_timestamp\\": 1716559662.34773, \\"_runtime\\": 7.055056}", "{\\"system.cpu\\": 1.84, \\"system.cpu.0.cpu_percent\\": 0.0, \\"system.cpu.1.cpu_percent\\": 0.0, \\"system.cpu.2.cpu_percent\\": 0.0, \\"system.cpu.3.cpu_percent\\": 0.0, \\"system.cpu.4.cpu_percent\\": 0.0, \\"system.cpu.5.cpu_percent\\": 0.0, \\"system.cpu.6.cpu_percent\\": 0.0, \\"system.cpu.7.cpu_percent\\": 0.0, \\"system.cpu.8.cpu_percent\\": 0.0, \\"system.cpu.9.cpu_percent\\": 0.0, \\"system.cpu.10.cpu_percent\\": 0.0, \\"system.cpu.11.cpu_percent\\": 0.0, \\"system.cpu.12.cpu_percent\\": 0.0, \\"system.cpu.13.cpu_percent\\": 0.0, \\"system.cpu.14.cpu_percent\\": 0.0, \\"system.cpu.15.cpu_percent\\": 0.0, \\"system.cpu.16.cpu_percent\\": 0.0, \\"system.cpu.17.cpu_percent\\": 0.0, \\"system.cpu.18.cpu_percent\\": 0.0, \\"system.cpu.19.cpu_percent\\": 0.0, \\"system.proc.cpu.threads\\": 37, \\"_wandb\\": true, \\"_timestamp\\": 1716559662.532861, \\"_runtime\\": 7.240187}", "{\\"system.cpu\\": 0.72, \\"system.cpu.0.cpu_percent\\": 0.0, \\"system.cpu.1.cpu_percent\\": 0.0, \\"system.cpu.2.cpu_percent\\": 0.0, \\"system.cpu.3.cpu_percent\\": 0.0, \\"system.cpu.4.cpu_percent\\": 0.0, \\"system.cpu.5.cpu_percent\\": 0.0, \\"system.cpu.6.cpu_percent\\": 0.0, \\"system.cpu.7.cpu_percent\\": 0.0, \\"system.cpu.8.cpu_percent\\": 0.0, \\"system.cpu.9.cpu_percent\\": 0.0, \\"system.cpu.10.cpu_percent\\": 0.0, \\"system.cpu.11.cpu_percent\\": 0.0, \\"system.cpu.12.cpu_percent\\": 0.0, \\"system.cpu.13.cpu_percent\\": 0.0, \\"system.cpu.14.cpu_percent\\": 100.0, \\"system.cpu.15.cpu_percent\\": 0.0, \\"system.cpu.16.cpu_percent\\": 0.0, \\"system.cpu.17.cpu_percent\\": 100.0, \\"system.cpu.18.cpu_percent\\": 0.0, \\"system.cpu.19.cpu_percent\\": 100.0, \\"system.proc.cpu.threads\\": 37, \\"_wandb\\": true, \\"_timestamp\\": 1716559662.708102, \\"_runtime\\": 7.415428}"]}, "output.log": {"offset": 0, "content": ["2024-05-24T14:07:44.480929 Total number of images in the dataset: 2527\\n", "2024-05-24T14:07:44.480929 Train dataset size after split: 2021\\n", "2024-05-24T14:07:44.480929 Validation dataset size after split: 252\\n", "2024-05-24T14:07:44.480929 Test dataset size after split: 254\\n"]}}, "dropped": 0}'
+2024-05-24 21:07:45,170 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:45,170 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:45,170 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Content-Type: application/json; charset=utf-8
+2024-05-24 21:07:45,170 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:45,170 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: X-Content-Type-Options: nosniff
+2024-05-24 21:07:45,170 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 750
+2024-05-24 21:07:45,170 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 749
+2024-05-24 21:07:45,173 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:45 GMT
+2024-05-24 21:07:45,173 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:45,173 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:45,173 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:45,203 DEBUG   wandb-upload_0:3608 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/config.yaml?Expires=1716646065&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=QvReMtIuM5dWgjgg5UckFCzeOrAYftTNq%2FdIBtu0aE7VampmMvNldtpQwkClETqJAbDMY4mna05WsbOqL9jFjYlAxzE0MZcAT3TmOqVjWSOJLZaL2v5etmPQGS2OQ%2Fe%2FpvwKL2of%2B%2Ftruo%2F%2BjQHInErr6FSH7nbDIiATNaG7uDCQqmFxwQvQI1WxuPJdevuFmblsimwD1ThJDKjXxDnIIQMwj8PeAR%2BwI7w0NFpCEAJqtA2nF6FWOEUZStnT8iUVsw0VXGMP7jdW2PBI1YT2j0mMuBwGXDwi3EUOpBp96%2FbqJyh851lIbZmgJz1%2FOLeJQUD1O520Q3hd8sJfy%2FnGwQ%3D%3D
+2024-05-24 21:07:45,212 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] send: b'PUT /wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/config.yaml?Expires=1716646065&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=QvReMtIuM5dWgjgg5UckFCzeOrAYftTNq%2FdIBtu0aE7VampmMvNldtpQwkClETqJAbDMY4mna05WsbOqL9jFjYlAxzE0MZcAT3TmOqVjWSOJLZaL2v5etmPQGS2OQ%2Fe%2FpvwKL2of%2B%2Ftruo%2F%2BjQHInErr6FSH7nbDIiATNaG7uDCQqmFxwQvQI1WxuPJdevuFmblsimwD1ThJDKjXxDnIIQMwj8PeAR%2BwI7w0NFpCEAJqtA2nF6FWOEUZStnT8iUVsw0VXGMP7jdW2PBI1YT2j0mMuBwGXDwi3EUOpBp96%2FbqJyh851lIbZmgJz1%2FOLeJQUD1O520Q3hd8sJfy%2FnGwQ%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 572\r\n\r\n'
+2024-05-24 21:07:45,212 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] send: b'wandb_version: 1\r\n\r\n_wandb:\r\n  desc: null\r\n  value:\r\n    python_version: 3.11.7\r\n    cli_version: 0.17.0\r\n    framework: huggingface\r\n    huggingface_version: 4.41.0\r\n    is_jupyter_run: true\r\n    is_kaggle_kernel: false\r\n    start_time: 1716559655\r\n    t:\r\n      1:\r\n      - 1\r\n      - 11\r\n      - 41\r\n      - 49\r\n      - 55\r\n      2:\r\n      - 1\r\n      - 11\r\n      - 41\r\n      - 49\r\n      - 55\r\n      3:\r\n      - 2\r\n      - 15\r\n      - 16\r\n      - 23\r\n      4: 3.11.7\r\n      5: 0.17.0\r\n      6: 4.41.0\r\n      8:\r\n      - 1\r\n      - 3\r\n      - 5\r\n      13: windows-amd64\r\n'
+2024-05-24 21:07:45,252 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 21:07:45,254 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 21:07:45,341 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:45,342 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:45,342 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Limit: 1000
+2024-05-24 21:07:45,342 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Remaining: 983
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Reset: 15
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 75
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 74
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:45 GMT
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:45,343 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:45,545 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:45,546 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: ETag: "21d63768caab38c28f3992038536706e"
+2024-05-24 21:07:45,546 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-generation: 1716559665372760
+2024-05-24 21:07:45,546 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-metageneration: 1
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: crc32c=n21tuA==
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: md5=IdY3aMqrOMKPOZIDhTZwbg==
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-length: 572
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-encoding: identity
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: X-GUploader-UploadID: ABPtcPqrRGBjYhqnVAt4R2lGKPwUl0HjIgds0voOsumMXGAn22rhLvQfgHkewzesA7jESz-DabI
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Content-Length: 0
+2024-05-24 21:07:45,547 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:45 GMT
+2024-05-24 21:07:45,548 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Server: UploadServer
+2024-05-24 21:07:45,548 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Content-Type: text/html; charset=UTF-8
+2024-05-24 21:07:45,548 DEBUG   wandb-upload_0:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:45,548 DEBUG   wandb-upload_0:3608 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/config.yaml?Expires=1716646065&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=QvReMtIuM5dWgjgg5UckFCzeOrAYftTNq%2FdIBtu0aE7VampmMvNldtpQwkClETqJAbDMY4mna05WsbOqL9jFjYlAxzE0MZcAT3TmOqVjWSOJLZaL2v5etmPQGS2OQ%2Fe%2FpvwKL2of%2B%2Ftruo%2F%2BjQHInErr6FSH7nbDIiATNaG7uDCQqmFxwQvQI1WxuPJdevuFmblsimwD1ThJDKjXxDnIIQMwj8PeAR%2BwI7w0NFpCEAJqtA2nF6FWOEUZStnT8iUVsw0VXGMP7jdW2PBI1YT2j0mMuBwGXDwi3EUOpBp96%2FbqJyh851lIbZmgJz1%2FOLeJQUD1O520Q3hd8sJfy%2FnGwQ%3D%3D complete
+2024-05-24 21:07:45,549 INFO    wandb-upload_0:3608 [upload_job.py:push():130] Uploaded file d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\config.yaml
+2024-05-24 21:07:46,260 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 21:07:46,263 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 21:07:46,816 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 429\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:46,816 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "trashnet-classification", "run": "3tv27o8t", "entity": "hasnanmr", "files": ["wandb-summary.json"]}}'
+2024-05-24 21:07:46,927 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 421\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:46,927 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "trashnet-classification", "run": "3tv27o8t", "entity": "hasnanmr", "files": ["output.log"]}}'
+2024-05-24 21:07:46,948 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 427\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:46,949 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "trashnet-classification", "run": "3tv27o8t", "entity": "hasnanmr", "files": ["requirements.txt"]}}'
+2024-05-24 21:07:47,063 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:47,063 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:47,063 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Content-Type: application/json; charset=utf-8
+2024-05-24 21:07:47,063 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:47,066 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: X-Content-Type-Options: nosniff
+2024-05-24 21:07:47,066 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 750
+2024-05-24 21:07:47,066 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 748
+2024-05-24 21:07:47,066 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:46 GMT
+2024-05-24 21:07:47,068 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:47,068 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:47,069 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:47,085 DEBUG   wandb-upload_3:3608 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/wandb-summary.json?Expires=1716646066&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=EsaekEGhapL6%2FUEyfLlYREsGuR%2FBLnE3CV2MaY8mEWldJz6IQTcP9NrW4CiYhYlZWXMHU0SDNsdHlDUcGTfUbm6iedA7ET8USRuKpI4Eej0VV%2FlqQkflFwGFXL%2FrQzuhVsQFzrcIpikcjODqiC2pIbGBJ497si2CEgMs2DlgUswbCWvbQjbrgcFeDvfuz8xAF5O8LOB%2BqcKEwIKT397JThhE1yPoE1bmk8FgV4bYHYWxMxFMVv2XIseW17GGVHfBofdrkB7BMRPgW8%2BzMuS2HvUXt%2FQOqV0HFH%2Bj2ngYKoG1%2F%2BQ5INWpJYDp85FhEN64V7y5XGkxvom1Y8O%2BlnwF3w%3D%3D
+2024-05-24 21:07:47,106 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] send: b'PUT /wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/wandb-summary.json?Expires=1716646066&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=EsaekEGhapL6%2FUEyfLlYREsGuR%2FBLnE3CV2MaY8mEWldJz6IQTcP9NrW4CiYhYlZWXMHU0SDNsdHlDUcGTfUbm6iedA7ET8USRuKpI4Eej0VV%2FlqQkflFwGFXL%2FrQzuhVsQFzrcIpikcjODqiC2pIbGBJ497si2CEgMs2DlgUswbCWvbQjbrgcFeDvfuz8xAF5O8LOB%2BqcKEwIKT397JThhE1yPoE1bmk8FgV4bYHYWxMxFMVv2XIseW17GGVHfBofdrkB7BMRPgW8%2BzMuS2HvUXt%2FQOqV0HFH%2Bj2ngYKoG1%2F%2BQ5INWpJYDp85FhEN64V7y5XGkxvom1Y8O%2BlnwF3w%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 26\r\n\r\n'
+2024-05-24 21:07:47,109 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] send: b'{"_wandb": {"runtime": 3}}'
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Content-Type: application/json; charset=utf-8
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: X-Content-Type-Options: nosniff
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 750
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 747
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:47 GMT
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:47,186 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:47,210 DEBUG   wandb-upload_1:3608 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/output.log?Expires=1716646067&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Vc%2FQNc8c3%2Bef5g3KHiGkljmp%2FAFg9Mubi3ZQ6%2Fe608KxGswBlO2wXCjCFjZaWaLVNKvrgpkztHe382iiWIekG8UdtNGSlfRNXgZMPYCF0SDgrsmU65k%2BetON1qzBtmbWtOR19N0WjmeZt%2FkeYIVo8QEni0eJJQoh3L06x8TabCDYy%2Bi9%2B4R2QwZwjFTgX0dTTnnrnP5zNvA0K2JsLtklFkyaWEvEWKBSMIflJxE4iRYT%2B%2Fm4AvogqWFFsprTwal4DwW7lYS9A7bt6F60dXrNbTBnBuD1meOAnM3X6OaWRwlCtjZE0pJbEpdQMQortOSBnv3PfRZzR6XXb7o8%2BnKXww%3D%3D
+2024-05-24 21:07:47,212 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:47,212 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:47,212 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Content-Type: application/json; charset=utf-8
+2024-05-24 21:07:47,214 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:47,214 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: X-Content-Type-Options: nosniff
+2024-05-24 21:07:47,215 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 750
+2024-05-24 21:07:47,215 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 746
+2024-05-24 21:07:47,215 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:47 GMT
+2024-05-24 21:07:47,215 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:47,216 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:47,216 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:47,220 DEBUG   wandb-upload_2:3608 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/requirements.txt?Expires=1716646067&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=rrfHNaIlQoV%2BQQsM5VoTnBPkTPXfC4JIONjaz27O0e%2FQyn%2FOz8j9oIfRCK3R6a92CDMtsWErI%2BlmF%2B%2F6Esq6cGKlG7saUaV93LVKsKqDDSK52SRwcqZ71Ndd8qpU%2Fr%2FlCkm02fdAE4w0Z85rI%2BwLKnEuUE%2B5YYwfmo3dT7wUEeuwdIEC5li%2FJOJwQbR%2BUKkweOPSceYc7Gq%2BlPgx1%2FkIu1%2F1ZDdbUiuPc2AnOi%2BVU6E%2BUFo3IR9kDs26wgq8IZDUNQIEvaSJ1PI%2FKahB7LTBB0P7xzoaNCf0Zmj7kMaUlrLxYw0tBOhnEh%2BRjktpZmAIsRZxlx0TLgbG9xBwlXoBig%3D%3D
+2024-05-24 21:07:47,261 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 21:07:47,261 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 21:07:47,427 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:47,427 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: ETag: "573f8b7fa311aab1b4631dcd9416633a"
+2024-05-24 21:07:47,427 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: x-goog-generation: 1716559667262083
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: x-goog-metageneration: 1
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: crc32c=dK5WUA==
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: md5=Vz+Lf6MRqrG0Yx3NlBZjOg==
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-length: 26
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-encoding: identity
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: X-GUploader-UploadID: ABPtcPoiYcWyff2eMUKMOtOWw8Bg_gGYsBv5I1qhk5rUKiWsUDjP9f62h9Js46aOBq__ZRjPJU59uBXYaA
+2024-05-24 21:07:47,434 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Content-Length: 0
+2024-05-24 21:07:47,435 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:47 GMT
+2024-05-24 21:07:47,435 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Server: UploadServer
+2024-05-24 21:07:47,435 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Content-Type: text/html; charset=UTF-8
+2024-05-24 21:07:47,435 DEBUG   wandb-upload_3:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:47,435 DEBUG   wandb-upload_3:3608 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/wandb-summary.json?Expires=1716646066&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=EsaekEGhapL6%2FUEyfLlYREsGuR%2FBLnE3CV2MaY8mEWldJz6IQTcP9NrW4CiYhYlZWXMHU0SDNsdHlDUcGTfUbm6iedA7ET8USRuKpI4Eej0VV%2FlqQkflFwGFXL%2FrQzuhVsQFzrcIpikcjODqiC2pIbGBJ497si2CEgMs2DlgUswbCWvbQjbrgcFeDvfuz8xAF5O8LOB%2BqcKEwIKT397JThhE1yPoE1bmk8FgV4bYHYWxMxFMVv2XIseW17GGVHfBofdrkB7BMRPgW8%2BzMuS2HvUXt%2FQOqV0HFH%2Bj2ngYKoG1%2F%2BQ5INWpJYDp85FhEN64V7y5XGkxvom1Y8O%2BlnwF3w%3D%3D complete
+2024-05-24 21:07:47,435 INFO    wandb-upload_3:3608 [upload_job.py:push():130] Uploaded file d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\wandb-summary.json
+2024-05-24 21:07:47,735 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] send: b'PUT /wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/requirements.txt?Expires=1716646067&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=rrfHNaIlQoV%2BQQsM5VoTnBPkTPXfC4JIONjaz27O0e%2FQyn%2FOz8j9oIfRCK3R6a92CDMtsWErI%2BlmF%2B%2F6Esq6cGKlG7saUaV93LVKsKqDDSK52SRwcqZ71Ndd8qpU%2Fr%2FlCkm02fdAE4w0Z85rI%2BwLKnEuUE%2B5YYwfmo3dT7wUEeuwdIEC5li%2FJOJwQbR%2BUKkweOPSceYc7Gq%2BlPgx1%2FkIu1%2F1ZDdbUiuPc2AnOi%2BVU6E%2BUFo3IR9kDs26wgq8IZDUNQIEvaSJ1PI%2FKahB7LTBB0P7xzoaNCf0Zmj7kMaUlrLxYw0tBOhnEh%2BRjktpZmAIsRZxlx0TLgbG9xBwlXoBig%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 2598\r\n\r\n'
+2024-05-24 21:07:47,735 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] send: b'PUT /wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/output.log?Expires=1716646067&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Vc%2FQNc8c3%2Bef5g3KHiGkljmp%2FAFg9Mubi3ZQ6%2Fe608KxGswBlO2wXCjCFjZaWaLVNKvrgpkztHe382iiWIekG8UdtNGSlfRNXgZMPYCF0SDgrsmU65k%2BetON1qzBtmbWtOR19N0WjmeZt%2FkeYIVo8QEni0eJJQoh3L06x8TabCDYy%2Bi9%2B4R2QwZwjFTgX0dTTnnrnP5zNvA0K2JsLtklFkyaWEvEWKBSMIflJxE4iRYT%2B%2Fm4AvogqWFFsprTwal4DwW7lYS9A7bt6F60dXrNbTBnBuD1meOAnM3X6OaWRwlCtjZE0pJbEpdQMQortOSBnv3PfRZzR6XXb7o8%2BnKXww%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 156\r\n\r\n'
+2024-05-24 21:07:47,735 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] send: b'GitPython==3.1.43\r\nJinja2==3.1.4\r\nMarkdown==3.6\r\nMarkupSafe==2.1.5\r\nPyYAML==6.0.1\r\nPygments==2.18.0\r\nPympler==1.0.1\r\nWerkzeug==3.0.3\r\nabsl-py==2.1.0\r\naccelerate==0.30.1\r\naiohttp==3.9.5\r\naioice==0.9.0\r\naiortc==1.8.0\r\naiosignal==1.3.1\r\naltair==4.0.0\r\nastor==0.8.1\r\nasttokens==2.4.1\r\nasync-timeout==4.0.3\r\nattrs==23.2.0\r\nav==11.0.0\r\nbase58==2.1.1\r\nbitsandbytes==0.43.1\r\nblinker==1.8.2\r\ncachetools==5.3.3\r\ncertifi==2024.2.2\r\ncffi==1.16.0\r\ncharset-normalizer==3.3.2\r\nclick==7.1.2\r\ncolorama==0.4.6\r\ncomm==0.2.2\r\ncontourpy==1.2.1\r\ncryptography==42.0.7\r\ncycler==0.12.1\r\ndatasets==2.19.1\r\ndebugpy==1.8.1\r\ndecorator==5.1.1\r\ndill==0.3.8\r\ndnspython==2.6.1\r\ndocker-pycreds==0.4.0\r\ndocstring_parser==0.16\r\nentrypoints==0.4\r\nexecuting==2.0.1\r\nfilelock==3.14.0\r\nfonttools==4.51.0\r\nfrozenlist==1.4.1\r\nfsspec==2024.3.1\r\ngitdb==4.0.11\r\ngoogle-crc32c==1.5.0\r\ngrpcio==1.64.0\r\nhuggingface-hub==0.23.0\r\nidna==3.7\r\nifaddr==0.2.0\r\ninquirerpy==0.3.4\r\nintel-openmp==2021.4.0\r\nipykernel==6.29.4\r\nipython==8.24.0\r\njedi==0.19.1\r\njsonschema-specifications==2023.12.1\r\njsonschema==4.22.0\r\njupyter_client==8.6.1\r\njupyter_core==5.7.2\r\nkiwisolver==1.4.5\r\nmarkdown-it-py==3.0.0\r\nmatplotlib-inline==0.1.7\r\nmatplotlib==3.9.0\r\nmdurl==0.1.2\r\nmkl==2021.4.0\r\nmpmath==1.3.0\r\nmultidict==6.0.5\r\nmultiprocess==0.70.16\r\nnest-asyncio==1.6.0\r\nnetworkx==3.3\r\nnumpy==1.26.4\r\nopencv-python-headless==4.9.0.80\r\nopencv-python==4.9.0.80\r\npackaging==24.0\r\npandas==2.2.2\r\nparso==0.8.4\r\npeft==0.11.1\r\npfzy==0.3.4\r\npillow==10.3.0\r\npip==24.0\r\nplatformdirs==4.2.2\r\nprompt-toolkit==3.0.43\r\nprotobuf==3.20.0\r\npsutil==5.9.8\r\npure-eval==0.2.2\r\npyOpenSSL==24.1.0\r\npyarrow-hotfix==0.6\r\npyarrow==16.1.0\r\npycparser==2.22\r\npydeck==0.9.1\r\npyee==11.1.0\r\npylibsrtp==0.10.0\r\npyparsing==3.1.2\r\npython-dateutil==2.9.0.post0\r\npytz==2024.1\r\npywin32==306\r\npyzmq==26.0.3\r\nreferencing==0.35.1\r\nregex==2024.5.15\r\nrequests==2.31.0\r\nrich==13.7.1\r\nrpds-py==0.18.1\r\nsafetensors==0.4.3\r\nsentry-sdk==2.2.0\r\nsetproctitle==1.3.3\r\nsetuptools==65.5.0\r\nshtab==1.7.1\r\nsix==1.16.0\r\nsmmap==5.0.1\r\nstack-data==0.6.3\r\nstreamlit-webrtc==0.47.6\r\nstreamlit==1.3.0\r\nsympy==1.12\r\ntbb==2021.11.0\r\ntbb==2021.12.0\r\ntenacity==8.3.0\r\ntensorboard-data-server==0.7.2\r\ntensorboard==2.16.2\r\ntokenizers==0.19.1\r\ntoml==0.10.2\r\ntoolz==0.12.1\r\ntorch==2.3.0+cu121\r\ntorchaudio==2.3.0+cu121\r\ntorchsummary==1.5.1\r\ntorchvision==0.18.0+cu121\r\ntornado==6.4\r\ntqdm==4.66.4\r\ntraitlets==5.14.3\r\ntransformers==4.41.0\r\ntrl==0.8.6\r\ntyping_extensions==4.11.0\r\ntyro==0.8.4\r\ntzdata==2024.1\r\ntzlocal==5.2\r\nurllib3==2.2.1\r\nvalidators==0.28.1\r\nwandb==0.17.0\r\nwatchdog==4.0.0\r\nwcwidth==0.2.13\r\nwheel==0.43.0\r\nxxhash==3.4.1\r\nyarl==1.9.4'
+2024-05-24 21:07:47,735 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] send: b'Total number of images in the dataset: 2527\nTrain dataset size after split: 2021\nValidation dataset size after split: 252\nTest dataset size after split: 254'
+2024-05-24 21:07:48,052 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:48,052 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: ETag: "cca416e1b97fea3995317c62f60d4000"
+2024-05-24 21:07:48,052 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: x-goog-generation: 1716559667890278
+2024-05-24 21:07:48,052 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: x-goog-metageneration: 1
+2024-05-24 21:07:48,052 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: crc32c=bZGoQw==
+2024-05-24 21:07:48,052 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: md5=zKQW4bl/6jmVMXxi9g1AAA==
+2024-05-24 21:07:48,052 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-length: 156
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-encoding: identity
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: X-GUploader-UploadID: ABPtcPo2A_Wl5RnbYnch0jjXaQc1wHY_wTMeQaQ3PnoU-QmVFy62vR-ywtw4T057b9l9-3M_liJ4k5IuJw
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Content-Length: 0
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:47 GMT
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Server: UploadServer
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Content-Type: text/html; charset=UTF-8
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:48,057 DEBUG   wandb-upload_1:3608 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/output.log?Expires=1716646067&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Vc%2FQNc8c3%2Bef5g3KHiGkljmp%2FAFg9Mubi3ZQ6%2Fe608KxGswBlO2wXCjCFjZaWaLVNKvrgpkztHe382iiWIekG8UdtNGSlfRNXgZMPYCF0SDgrsmU65k%2BetON1qzBtmbWtOR19N0WjmeZt%2FkeYIVo8QEni0eJJQoh3L06x8TabCDYy%2Bi9%2B4R2QwZwjFTgX0dTTnnrnP5zNvA0K2JsLtklFkyaWEvEWKBSMIflJxE4iRYT%2B%2Fm4AvogqWFFsprTwal4DwW7lYS9A7bt6F60dXrNbTBnBuD1meOAnM3X6OaWRwlCtjZE0pJbEpdQMQortOSBnv3PfRZzR6XXb7o8%2BnKXww%3D%3D complete
+2024-05-24 21:07:48,057 INFO    wandb-upload_1:3608 [upload_job.py:push():130] Uploaded file d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\output.log
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: ETag: "d6a363f0b42945f5670c28e3dbedafc6"
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: x-goog-generation: 1716559667904260
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: x-goog-metageneration: 1
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: crc32c=6HUAlQ==
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: x-goog-hash: md5=1qNj8LQpRfVnDCjj2+2vxg==
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-length: 2598
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: x-goog-stored-content-encoding: identity
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: X-GUploader-UploadID: ABPtcPoAKitQZ-rRSyrSuAW7VexKa6GeJL_Jsx56P3ye1g-V2DEOMnNWxz3356zFQPTLgYHNmVM
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Content-Length: 0
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:47 GMT
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Server: UploadServer
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Content-Type: text/html; charset=UTF-8
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:48,069 DEBUG   wandb-upload_2:3608 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/3tv27o8t/requirements.txt?Expires=1716646067&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=rrfHNaIlQoV%2BQQsM5VoTnBPkTPXfC4JIONjaz27O0e%2FQyn%2FOz8j9oIfRCK3R6a92CDMtsWErI%2BlmF%2B%2F6Esq6cGKlG7saUaV93LVKsKqDDSK52SRwcqZ71Ndd8qpU%2Fr%2FlCkm02fdAE4w0Z85rI%2BwLKnEuUE%2B5YYwfmo3dT7wUEeuwdIEC5li%2FJOJwQbR%2BUKkweOPSceYc7Gq%2BlPgx1%2FkIu1%2F1ZDdbUiuPc2AnOi%2BVU6E%2BUFo3IR9kDs26wgq8IZDUNQIEvaSJ1PI%2FKahB7LTBB0P7xzoaNCf0Zmj7kMaUlrLxYw0tBOhnEh%2BRjktpZmAIsRZxlx0TLgbG9xBwlXoBig%3D%3D complete
+2024-05-24 21:07:48,069 INFO    wandb-upload_2:3608 [upload_job.py:push():130] Uploaded file d:\classification_test\wandb\run-20240524_210735-3tv27o8t\files\requirements.txt
+2024-05-24 21:07:48,276 INFO    Thread-15 (_thread_body):3608 [sender.py:transition_state():613] send defer: 11
+2024-05-24 21:07:48,276 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 21:07:48,276 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:48,276 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-24 21:07:48,276 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 21:07:48,276 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:48,276 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-24 21:07:48,276 INFO    SenderThread:3608 [file_pusher.py:join():175] waiting for file pusher
+2024-05-24 21:07:48,276 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 12
+2024-05-24 21:07:48,276 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:48,276 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-24 21:07:48,276 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:48,276 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-24 21:07:48,276 INFO    SenderThread:3608 [file_stream.py:finish():601] file stream finish called
+2024-05-24 21:07:48,276 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'POST /files/hasnanmr/trashnet-classification/3tv27o8t/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 132\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:48,276 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] send: b'{"complete": true, "exitcode": 0, "dropped": 0, "uploaded": ["config.yaml", "requirements.txt", "wandb-summary.json", "output.log"]}'
+2024-05-24 21:07:48,546 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:48,546 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:48,546 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Limit: 1000
+2024-05-24 21:07:48,546 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Remaining: 980
+2024-05-24 21:07:48,546 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Ratelimit-Reset: 12
+2024-05-24 21:07:48,547 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:48,547 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 75
+2024-05-24 21:07:48,547 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 73
+2024-05-24 21:07:48,547 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:48 GMT
+2024-05-24 21:07:48,547 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:48,547 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:48,547 DEBUG   FileStreamThread:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:48,547 INFO    SenderThread:3608 [file_stream.py:finish():605] file stream finish is done
+2024-05-24 21:07:48,547 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 13
+2024-05-24 21:07:48,547 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:48,547 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-24 21:07:48,548 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:48,548 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-24 21:07:48,548 INFO    SenderThread:3608 [sender.py:transition_state():613] send defer: 14
+2024-05-24 21:07:48,548 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 21:07:48,548 INFO    HandlerThread:3608 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-24 21:07:48,548 DEBUG   SenderThread:3608 [sender.py:send():378] send: final
+2024-05-24 21:07:48,548 DEBUG   SenderThread:3608 [sender.py:send():378] send: footer
+2024-05-24 21:07:48,549 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: defer
+2024-05-24 21:07:48,549 INFO    SenderThread:3608 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-24 21:07:48,549 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 21:07:48,549 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 21:07:48,549 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-24 21:07:48,552 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: server_info
+2024-05-24 21:07:48,552 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-24 21:07:48,552 DEBUG   SenderThread:3608 [sender.py:send_request():405] send_request: server_info
+2024-05-24 21:07:48,552 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-24 21:07:48,553 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.17.0\r\nAccept-Encoding: gzip, deflate\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 366\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOjc5YTY3MjZkMmNkMmFjMWRmODBjMDUyNTNhMmU4YWZmMzI3MTU3OTY=\r\n\r\n'
+2024-05-24 21:07:48,554 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] send: b'{"query": "query Viewer {\\n  viewer {\\n    id\\n    entity\\n    username\\n    email\\n    flags\\n    teams {\\n      edges {\\n        node {\\n          name\\n        }\\n      }\\n    }\\n  }\\n  serverInfo {\\n    cliVersionInfo\\n    latestLocalVersionInfo {\\n      outOfDate\\n      latestVersionString\\n      versionOnThisInstanceString\\n    }\\n  }\\n}\\n", "variables": {}}'
+2024-05-24 21:07:48,818 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Content-Encoding: gzip
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Content-Type: application/json; charset=utf-8
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Vary: Origin
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Content-Type-Options: nosniff
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Limit: 750
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: X-Ratelimit-Remaining: 744
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Date: Fri, 24 May 2024 14:07:48 GMT
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Via: 1.1 google
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-24 21:07:48,819 DEBUG   SenderThread:3608 [internal_api.py:httpclient_log():144] header: Transfer-Encoding: chunked
+2024-05-24 21:07:48,819 DEBUG   HandlerThread:3608 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-24 21:07:48,819 INFO    HandlerThread:3608 [handler.py:finish():882] shutting down handler
+2024-05-24 21:07:49,553 INFO    WriterThread:3608 [datastore.py:close():296] close: d:\classification_test\wandb\run-20240524_210735-3tv27o8t\run-3tv27o8t.wandb
+2024-05-24 21:07:49,827 INFO    SenderThread:3608 [sender.py:finish():1545] shutting down sender
+2024-05-24 21:07:49,827 INFO    SenderThread:3608 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-24 21:07:49,827 INFO    SenderThread:3608 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,5 @@
+2024-05-24 20:53:29,181 INFO    StreamThr :35304 [internal.py:wandb_internal():85] W&B internal server running at pid: 35304, started at: 2024-05-24 20:53:29.181387
+2024-05-24 20:53:29,181 DEBUG   HandlerThread:35304 [handler.py:handle_request():158] handle_request: status
+2024-05-24 20:53:29,181 INFO    WriterThread:35304 [datastore.py:open_for_write():87] open: D:\classification_test\wandb\run-20240524_205329-qx3trcnu\run-qx3trcnu.wandb
+2024-05-24 20:53:29,181 DEBUG   SenderThread:35304 [sender.py:send():378] send: header
+2024-05-24 20:53:29,208 DEBUG   SenderThread:35304 [sender.py:send():378] send: run

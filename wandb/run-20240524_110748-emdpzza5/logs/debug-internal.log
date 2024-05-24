@@ -1,0 +1,256 @@
+2024-05-24 11:07:54,610 INFO    StreamThr :5952 [internal.py:wandb_internal():85] W&B internal server running at pid: 5952, started at: 2024-05-24 11:07:54.605844
+2024-05-24 11:07:54,610 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: status
+2024-05-24 11:07:54,613 INFO    WriterThread:5952 [datastore.py:open_for_write():87] open: d:\classification_test\wandb\run-20240524_110748-emdpzza5\run-emdpzza5.wandb
+2024-05-24 11:07:54,613 DEBUG   SenderThread:5952 [sender.py:send():378] send: header
+2024-05-24 11:07:54,613 DEBUG   SenderThread:5952 [sender.py:send():378] send: run
+2024-05-24 11:07:55,461 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {}
+2024-05-24 11:07:55,461 INFO    SenderThread:5952 [dir_watcher.py:__init__():211] watching files in: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files
+2024-05-24 11:07:55,461 INFO    SenderThread:5952 [sender.py:_start_run_threads():1123] run started: emdpzza5 with start time 1716523674.000925
+2024-05-24 11:07:55,468 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: check_version
+2024-05-24 11:07:55,468 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: check_version
+2024-05-24 11:07:55,802 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: run_start
+2024-05-24 11:07:55,810 DEBUG   HandlerThread:5952 [system_info.py:__init__():26] System info init
+2024-05-24 11:07:55,810 DEBUG   HandlerThread:5952 [system_info.py:__init__():41] System info init done
+2024-05-24 11:07:55,810 INFO    HandlerThread:5952 [system_monitor.py:start():194] Starting system monitor
+2024-05-24 11:07:55,810 INFO    SystemMonitor:5952 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-24 11:07:55,810 INFO    HandlerThread:5952 [system_monitor.py:probe():214] Collecting system info
+2024-05-24 11:07:55,822 DEBUG   HandlerThread:5952 [system_info.py:probe():150] Probing system
+2024-05-24 11:07:55,822 INFO    SystemMonitor:5952 [interfaces.py:start():188] Started cpu monitoring
+2024-05-24 11:07:55,826 INFO    SystemMonitor:5952 [interfaces.py:start():188] Started disk monitoring
+2024-05-24 11:07:55,827 DEBUG   HandlerThread:5952 [system_info.py:_probe_git():135] Probing git
+2024-05-24 11:07:55,827 INFO    SystemMonitor:5952 [interfaces.py:start():188] Started gpu monitoring
+2024-05-24 11:07:55,827 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:07:55,835 INFO    SystemMonitor:5952 [interfaces.py:start():188] Started memory monitoring
+2024-05-24 11:07:55,835 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:07:55,843 INFO    SystemMonitor:5952 [interfaces.py:start():188] Started network monitoring
+2024-05-24 11:07:55,885 DEBUG   HandlerThread:5952 [system_info.py:_probe_git():143] Probing git done
+2024-05-24 11:07:55,885 DEBUG   HandlerThread:5952 [system_info.py:probe():198] Probing system done
+2024-05-24 11:07:55,885 DEBUG   HandlerThread:5952 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.7', 'heartbeatAt': '2024-05-24T04:07:55.822131', 'startedAt': '2024-05-24T04:07:48.843639', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/hasnanmr/classification_trashnet.git', 'commit': '1aaffcf4d0a840bd81977338aefb0265037a6036'}, 'email': 'hasnan.mhr@gmail.com', 'root': 'D:/classification_test', 'host': 'HasnanRamadhan', 'username': 'Hasnan Ramadhan', 'executable': 'd:\\classification_test\\.venv\\Scripts\\python.exe', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2400.0, 'min': 0.0, 'max': 2400.0}, 'cpu_freq_per_core': [{'current': 2400.0, 'min': 0.0, 'max': 2400.0}], 'disk': {'/': {'total': 468.74999618530273, 'used': 144.38874435424805}}, 'gpu': 'NVIDIA GeForce RTX 4050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4050 Laptop GPU', 'memory_total': 6439305216}], 'memory': {'total': 15.731315612792969}}
+2024-05-24 11:07:55,885 INFO    HandlerThread:5952 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-24 11:07:55,885 INFO    HandlerThread:5952 [system_monitor.py:probe():227] Publishing system info
+2024-05-24 11:07:55,885 INFO    HandlerThread:5952 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-24 11:07:55,885 DEBUG   SenderThread:5952 [sender.py:send():378] send: files
+2024-05-24 11:07:55,885 INFO    SenderThread:5952 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-24 11:07:55,977 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-24 11:07:55,977 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 11:07:55,977 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: python_packages
+2024-05-24 11:07:55,977 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 11:07:56,344 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:07:56,344 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:07:56,450 DEBUG   wandb-upload_0:5952 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/wandb-metadata.json?Expires=1716610082&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=czgnScsPba%2Btm9i2TaAz%2BNit01YHL%2BfM9KsqOHO7HkrRqjZYwdibJTySV9BJinCoYR%2FQSwqn2SD61Bl8KByUAO%2BrjTP4vzRA6cmvCHwSN0pPWVoi9nDvtdxl2UDqKL7D8IElJBogh%2BuvXnuAo4sIoBoQybC83GwtPA3PedY5SPO79iU%2FDEJRKQzDzztWd3QoUc7qnRCxyaQMC2l99Kn3FBP1SWsQGelNfYcagCFfd%2F%2FCGL1wFgHfGUfP5ImHXmGULSyb63%2F3IsMmcsbrA0lJeoI9kKVtDD%2F5ed0r1iSPjvWXGyp%2BQxUcOOrJ0mq6lPaNhnhL7MLLNgx3EXmfQy1aQA%3D%3D
+2024-05-24 11:07:56,467 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=0, failed=False, artifact_file=False)}
+2024-05-24 11:07:56,477 INFO    Thread-30 :5952 [dir_watcher.py:_on_file_created():271] file/dir created: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\wandb-metadata.json
+2024-05-24 11:07:56,477 INFO    Thread-30 :5952 [dir_watcher.py:_on_file_created():271] file/dir created: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\requirements.txt
+2024-05-24 11:07:56,682 DEBUG   SenderThread:5952 [sender.py:send():378] send: telemetry
+2024-05-24 11:07:57,061 DEBUG   wandb-upload_0:5952 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/wandb-metadata.json?Expires=1716610082&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=czgnScsPba%2Btm9i2TaAz%2BNit01YHL%2BfM9KsqOHO7HkrRqjZYwdibJTySV9BJinCoYR%2FQSwqn2SD61Bl8KByUAO%2BrjTP4vzRA6cmvCHwSN0pPWVoi9nDvtdxl2UDqKL7D8IElJBogh%2BuvXnuAo4sIoBoQybC83GwtPA3PedY5SPO79iU%2FDEJRKQzDzztWd3QoUc7qnRCxyaQMC2l99Kn3FBP1SWsQGelNfYcagCFfd%2F%2FCGL1wFgHfGUfP5ImHXmGULSyb63%2F3IsMmcsbrA0lJeoI9kKVtDD%2F5ed0r1iSPjvWXGyp%2BQxUcOOrJ0mq6lPaNhnhL7MLLNgx3EXmfQy1aQA%3D%3D complete
+2024-05-24 11:07:57,061 INFO    wandb-upload_0:5952 [upload_job.py:push():130] Uploaded file C:\Users\HASNAN~1\AppData\Local\Temp\tmpkyxszmr3wandb\etw3yoij-wandb-metadata.json
+2024-05-24 11:07:57,467 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:07:58,350 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:07:58,350 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:07:58,468 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:07:58,632 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:07:58,637 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:07:59,470 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:07:59,721 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 11:08:00,471 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:00,645 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:00,645 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:00,928 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:00,936 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:01,473 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:02,474 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:02,943 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:02,943 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:03,225 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:03,225 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:03,474 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:04,475 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:04,756 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 11:08:05,231 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:05,231 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:05,475 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:05,514 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:05,514 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:06,477 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:07,478 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:07,525 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:07,525 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:07,810 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:07,810 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:08,479 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:09,479 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:09,800 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 11:08:09,815 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:09,815 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:10,087 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:10,087 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:10,480 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:11,003 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-24 11:08:11,004 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: stop_status
+2024-05-24 11:08:11,481 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:12,097 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:12,098 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:12,377 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:12,383 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:12,481 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:13,482 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:14,402 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:14,402 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:14,483 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:14,686 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:14,686 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:15,426 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 11:08:15,483 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:16,484 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:16,693 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:16,693 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:16,969 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:16,969 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:17,485 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:18,487 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:18,974 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:18,974 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: Unknown Error
+2024-05-24 11:08:19,257 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:19,257 ERROR   gpu       :5952 [interfaces.py:monitor():142] Failed to sample metric: No data
+2024-05-24 11:08:19,489 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:19,679 DEBUG   SenderThread:5952 [sender.py:send():378] send: telemetry
+2024-05-24 11:08:19,679 DEBUG   SenderThread:5952 [sender.py:send():378] send: exit
+2024-05-24 11:08:19,679 INFO    SenderThread:5952 [sender.py:send_exit():585] handling exit code: 0
+2024-05-24 11:08:19,679 INFO    SenderThread:5952 [sender.py:send_exit():587] handling runtime: 23
+2024-05-24 11:08:19,684 INFO    SenderThread:5952 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 11:08:19,685 INFO    SenderThread:5952 [sender.py:send_exit():593] send defer
+2024-05-24 11:08:19,685 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:19,685 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 0
+2024-05-24 11:08:19,685 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:19,685 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-05-24 11:08:19,685 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 1
+2024-05-24 11:08:19,685 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:19,685 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 1
+2024-05-24 11:08:19,685 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:19,687 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-05-24 11:08:19,687 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 2
+2024-05-24 11:08:19,687 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:19,687 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 2
+2024-05-24 11:08:19,687 INFO    HandlerThread:5952 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-24 11:08:19,695 INFO    HandlerThread:5952 [interfaces.py:finish():200] Joined cpu monitor
+2024-05-24 11:08:19,695 DEBUG   SystemMonitor:5952 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-24 11:08:19,695 INFO    HandlerThread:5952 [interfaces.py:finish():200] Joined disk monitor
+2024-05-24 11:08:19,695 DEBUG   SystemMonitor:5952 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-24 11:08:19,695 DEBUG   SystemMonitor:5952 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-24 11:08:19,993 ERROR   gpu       :5952 [interfaces.py:aggregate():159] Failed to serialize metric: division by zero
+2024-05-24 11:08:19,993 INFO    HandlerThread:5952 [interfaces.py:finish():200] Joined gpu monitor
+2024-05-24 11:08:19,993 INFO    HandlerThread:5952 [interfaces.py:finish():200] Joined memory monitor
+2024-05-24 11:08:19,993 INFO    HandlerThread:5952 [interfaces.py:finish():200] Joined network monitor
+2024-05-24 11:08:19,993 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 3
+2024-05-24 11:08:19,993 DEBUG   SenderThread:5952 [sender.py:send():378] send: stats
+2024-05-24 11:08:19,993 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:19,993 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 3
+2024-05-24 11:08:19,993 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 4
+2024-05-24 11:08:19,993 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:19,993 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 4
+2024-05-24 11:08:19,993 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 5
+2024-05-24 11:08:19,993 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:19,993 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 5
+2024-05-24 11:08:19,993 DEBUG   SenderThread:5952 [sender.py:send():378] send: summary
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-24 11:08:19,993 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 6
+2024-05-24 11:08:19,993 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:19,993 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 6
+2024-05-24 11:08:19,993 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:19,993 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-05-24 11:08:19,993 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: status_report
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 7
+2024-05-24 11:08:20,252 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:20,252 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 7
+2024-05-24 11:08:20,252 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 8
+2024-05-24 11:08:20,252 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:20,252 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 8
+2024-05-24 11:08:20,252 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [job_builder.py:build():432] Attempting to build job artifact
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-05-24 11:08:20,252 WARNING SenderThread:5952 [job_builder.py:_log_if_verbose():267] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-05-24 11:08:20,252 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 9
+2024-05-24 11:08:20,252 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:20,252 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 9
+2024-05-24 11:08:20,252 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:20,259 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-05-24 11:08:20,259 INFO    SenderThread:5952 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-24 11:08:20,491 INFO    FPStatsThread:5952 [file_pusher.py:_file_pusher_stats():85] FilePusher stats: {'wandb-metadata.json': FileStats(deduped=False, total=1413, uploaded=1413, failed=False, artifact_file=False)}
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [dir_watcher.py:_on_file_modified():288] file/dir modified: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\config.yaml
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [dir_watcher.py:_on_file_created():271] file/dir created: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\wandb-summary.json
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [dir_watcher.py:finish():388] scan: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\config.yaml config.yaml
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\requirements.txt requirements.txt
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\wandb-metadata.json wandb-metadata.json
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [dir_watcher.py:finish():402] scan save: d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\wandb-summary.json wandb-summary.json
+2024-05-24 11:08:20,604 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 10
+2024-05-24 11:08:20,604 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:20,604 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 10
+2024-05-24 11:08:20,610 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:20,610 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-05-24 11:08:20,610 INFO    SenderThread:5952 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-24 11:08:20,688 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 11:08:20,688 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 11:08:20,856 DEBUG   wandb-upload_0:5952 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/config.yaml?Expires=1716610106&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AYdQJCTbdxFwacPcKGovMqdbMGZ1qrH517w2OyrZyLP1PKie%2Bo3f7evYpW5riaPMeFcHPRm%2BAPq3cNXMrN8jcd3OhOKt%2FHR5R6ZvPhc3P1fnDeUMZF3SDYh9kTFvhVYcO6VGum9e5HwTfb9CzEcvuRLDDZIrjiEETEOO%2B8WXGlbeXlvO9x0nfp5j2GvUHa02AZIK11R5mQv9weyvjxloCdU2EghG%2F4Hu6diWkXw8C5rIogIUY83y2sWsDn4ZJ6rz0elKsZnA703WKIDbkXRHZYfVyWnF235uOSTuaTLreMViyK41RPmL11jIE%2FtpncoYOqcz9bBIXlyGuTN6XVWiKA%3D%3D
+2024-05-24 11:08:20,869 DEBUG   wandb-upload_1:5952 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/requirements.txt?Expires=1716610106&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=cOcWJCOCRL150b9KlNTNKhXyxSW2LEqVtL3VoIxr%2FvwKh6vI0OFN4RWwV%2B7VR0j5liPzOcNa%2BwJbX1bUVgCQnlY9NC4i%2FX%2BzHt9dzCUtLLWmGxWj5NMZkTNutHskDnDz6gNfdU7AxXLo2rB%2F7vhbi3vUAfKhdIXWFYepgfqOXLKDsTcUQeEtuFnbf0ym1NLvd5gDazz%2Fdd8vDBxf1jJ6M5dMJwPz51qBJmORWX0yjvhGVvAvodeCg0Pt5LI7RnvAclgh0cV%2BZw%2FgHq0QTJlszD67hG7L7ybGXx18gJ8ZkTElpUa1yHMXy%2FsN7fXFZEXgzqsCKpUodJrF79vL2ouVQA%3D%3D
+2024-05-24 11:08:21,060 DEBUG   wandb-upload_2:5952 [internal_api.py:upload_file():2730] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/wandb-summary.json?Expires=1716610107&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=t8wXkd3yq0mp2qSiK9ZAWsJUPlIAf1rIwyFwJ%2F8uBpoARnEz2Uce982eGSj24d6Yy11mp9T2sOMC8FV7Fyaelrc4qZGcl2SoBSg0Y2f5dCTQjbw7EhmTHl1k9me5hLkl0Z8pcdPeuwNoCE%2BSZ4eYeZfrRvg9wyge7sIeLdQsnz3s1bXyuboT%2Becxwf9%2FLT6RI0YjTTIls1vmFEuO59PaPIS%2Bsc8owkkyFGkg%2FQ3HGOk3%2BfqBxNDxs%2F%2FREH7Njs3yVmtqEkijfvCu9UhkZb1SjoXWMa3LCmmgxhi%2BxjERJ%2BRoVMniKCegAB7rqZ0LF9gV0XZ%2BDcB52l6k91E2xD3iTQ%3D%3D
+2024-05-24 11:08:21,189 DEBUG   wandb-upload_0:5952 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/config.yaml?Expires=1716610106&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AYdQJCTbdxFwacPcKGovMqdbMGZ1qrH517w2OyrZyLP1PKie%2Bo3f7evYpW5riaPMeFcHPRm%2BAPq3cNXMrN8jcd3OhOKt%2FHR5R6ZvPhc3P1fnDeUMZF3SDYh9kTFvhVYcO6VGum9e5HwTfb9CzEcvuRLDDZIrjiEETEOO%2B8WXGlbeXlvO9x0nfp5j2GvUHa02AZIK11R5mQv9weyvjxloCdU2EghG%2F4Hu6diWkXw8C5rIogIUY83y2sWsDn4ZJ6rz0elKsZnA703WKIDbkXRHZYfVyWnF235uOSTuaTLreMViyK41RPmL11jIE%2FtpncoYOqcz9bBIXlyGuTN6XVWiKA%3D%3D complete
+2024-05-24 11:08:21,189 INFO    wandb-upload_0:5952 [upload_job.py:push():130] Uploaded file d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\config.yaml
+2024-05-24 11:08:21,380 DEBUG   wandb-upload_1:5952 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/requirements.txt?Expires=1716610106&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=cOcWJCOCRL150b9KlNTNKhXyxSW2LEqVtL3VoIxr%2FvwKh6vI0OFN4RWwV%2B7VR0j5liPzOcNa%2BwJbX1bUVgCQnlY9NC4i%2FX%2BzHt9dzCUtLLWmGxWj5NMZkTNutHskDnDz6gNfdU7AxXLo2rB%2F7vhbi3vUAfKhdIXWFYepgfqOXLKDsTcUQeEtuFnbf0ym1NLvd5gDazz%2Fdd8vDBxf1jJ6M5dMJwPz51qBJmORWX0yjvhGVvAvodeCg0Pt5LI7RnvAclgh0cV%2BZw%2FgHq0QTJlszD67hG7L7ybGXx18gJ8ZkTElpUa1yHMXy%2FsN7fXFZEXgzqsCKpUodJrF79vL2ouVQA%3D%3D complete
+2024-05-24 11:08:21,380 INFO    wandb-upload_1:5952 [upload_job.py:push():130] Uploaded file d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\requirements.txt
+2024-05-24 11:08:21,623 DEBUG   wandb-upload_2:5952 [internal_api.py:upload_file():2735] upload_file: https://storage.googleapis.com/wandb-production.appspot.com/hasnanmr/trashnet-classification/emdpzza5/wandb-summary.json?Expires=1716610107&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=t8wXkd3yq0mp2qSiK9ZAWsJUPlIAf1rIwyFwJ%2F8uBpoARnEz2Uce982eGSj24d6Yy11mp9T2sOMC8FV7Fyaelrc4qZGcl2SoBSg0Y2f5dCTQjbw7EhmTHl1k9me5hLkl0Z8pcdPeuwNoCE%2BSZ4eYeZfrRvg9wyge7sIeLdQsnz3s1bXyuboT%2Becxwf9%2FLT6RI0YjTTIls1vmFEuO59PaPIS%2Bsc8owkkyFGkg%2FQ3HGOk3%2BfqBxNDxs%2F%2FREH7Njs3yVmtqEkijfvCu9UhkZb1SjoXWMa3LCmmgxhi%2BxjERJ%2BRoVMniKCegAB7rqZ0LF9gV0XZ%2BDcB52l6k91E2xD3iTQ%3D%3D complete
+2024-05-24 11:08:21,623 INFO    wandb-upload_2:5952 [upload_job.py:push():130] Uploaded file d:\classification_test\wandb\run-20240524_110748-emdpzza5\files\wandb-summary.json
+2024-05-24 11:08:21,691 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 11:08:21,691 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 11:08:21,829 INFO    Thread-29 (_thread_body):5952 [sender.py:transition_state():613] send defer: 11
+2024-05-24 11:08:21,830 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:21,830 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 11
+2024-05-24 11:08:21,830 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:21,830 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-05-24 11:08:21,830 INFO    SenderThread:5952 [file_pusher.py:join():175] waiting for file pusher
+2024-05-24 11:08:21,830 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 12
+2024-05-24 11:08:21,831 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:21,831 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 12
+2024-05-24 11:08:21,831 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:21,831 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-05-24 11:08:21,831 INFO    SenderThread:5952 [file_stream.py:finish():601] file stream finish called
+2024-05-24 11:08:22,697 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 11:08:22,701 INFO    SenderThread:5952 [file_stream.py:finish():605] file stream finish is done
+2024-05-24 11:08:22,701 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 13
+2024-05-24 11:08:22,701 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 11:08:22,701 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:22,701 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 13
+2024-05-24 11:08:22,701 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:22,701 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-05-24 11:08:22,701 INFO    SenderThread:5952 [sender.py:transition_state():613] send defer: 14
+2024-05-24 11:08:22,701 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: defer
+2024-05-24 11:08:22,701 INFO    HandlerThread:5952 [handler.py:handle_request_defer():184] handle defer: 14
+2024-05-24 11:08:22,701 DEBUG   SenderThread:5952 [sender.py:send():378] send: final
+2024-05-24 11:08:22,701 DEBUG   SenderThread:5952 [sender.py:send():378] send: footer
+2024-05-24 11:08:22,701 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: defer
+2024-05-24 11:08:22,701 INFO    SenderThread:5952 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-05-24 11:08:22,701 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: poll_exit
+2024-05-24 11:08:22,701 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: poll_exit
+2024-05-24 11:08:22,701 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: internal_messages
+2024-05-24 11:08:22,701 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: server_info
+2024-05-24 11:08:22,701 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: get_summary
+2024-05-24 11:08:22,701 DEBUG   SenderThread:5952 [sender.py:send_request():405] send_request: server_info
+2024-05-24 11:08:22,701 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: sampled_history
+2024-05-24 11:08:23,067 DEBUG   HandlerThread:5952 [handler.py:handle_request():158] handle_request: shutdown
+2024-05-24 11:08:23,067 INFO    HandlerThread:5952 [handler.py:finish():882] shutting down handler
+2024-05-24 11:08:23,715 INFO    WriterThread:5952 [datastore.py:close():296] close: d:\classification_test\wandb\run-20240524_110748-emdpzza5\run-emdpzza5.wandb
+2024-05-24 11:08:24,068 INFO    SenderThread:5952 [sender.py:finish():1545] shutting down sender
+2024-05-24 11:08:24,068 INFO    SenderThread:5952 [file_pusher.py:finish():169] shutting down file pusher
+2024-05-24 11:08:24,068 INFO    SenderThread:5952 [file_pusher.py:join():175] waiting for file pusher

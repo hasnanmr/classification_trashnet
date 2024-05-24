@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "D:\classification_test\train.py", line 150, in <module>
+    for step, (images, labels) in enumerate(train_dl):
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataset.py", line 419, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\torch\utils\data\dataset.py", line 419, in <listcomp>
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\train.py", line 34, in __getitem__
+    response = requests.get(image_url)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\classification_test\.venv\Lib\site-packages\requests\sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "D:\classification_test\.venv\Lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "D:\classification_test\.venv\Lib\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=512x384 at 0x20341AF99D0>': No scheme supplied. Perhaps you meant https://<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=512x384 at 0x20341AF99D0>?

@@ -1,0 +1,52 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.11.7",
+    "heartbeatAt": "2024-05-24T14:07:39.239318",
+    "startedAt": "2024-05-24T14:07:35.263638",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/hasnanmr/classification_trashnet.git",
+        "commit": "cea1a2232bb634cd198ad7a77f534a40dc0f042a"
+    },
+    "email": "hasnan.mhr@gmail.com",
+    "root": "D:/classification_test",
+    "host": "HasnanRamadhan",
+    "username": "Hasnan Ramadhan",
+    "executable": "d:\\classification_test\\.venv\\Scripts\\python.exe",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 2400.0,
+        "min": 0.0,
+        "max": 2400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400.0,
+            "min": 0.0,
+            "max": 2400.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 468.74999618530273,
+            "used": 144.39897537231445
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+            "memory_total": 6439305216
+        }
+    ],
+    "memory": {
+        "total": 15.731315612792969
+    }
+}
